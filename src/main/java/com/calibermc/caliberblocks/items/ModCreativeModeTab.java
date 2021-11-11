@@ -11,6 +11,8 @@ public class ModCreativeModeTab {
     //        return new ItemStack(ModItems.DRAGON_GLASS.get());
     //    }
     //};
+
+    // Group Inventory Stacks
     public static final CreativeModeTab CALIBER_BLOCKS_GROUP = new CreativeModeTab("caliber_blocks") {
         @Override
         public ItemStack makeIcon() {
