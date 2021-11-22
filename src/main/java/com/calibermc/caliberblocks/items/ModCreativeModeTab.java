@@ -19,4 +19,10 @@ public class ModCreativeModeTab {
             return new ItemStack(ModBlocks.DRAGON_GLASS_BLOCK.get());
         }
     };
+    public static final CreativeModeTab CALIBER_DECORATIONS_GROUP = new CreativeModeTab("caliber_decorations") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModBlocks.HORIZONTAL_BARREL.get());
+        }
+    };
 }
