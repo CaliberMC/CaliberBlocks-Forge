@@ -129,13 +129,13 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject <T> registerBlock (String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
-        return toReturn;}
+        return toReturn;
+    }
     // Registers BlockItems
     public static <T extends Block> void registerBlockItem (String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(ModCreativeTab.TAB_CALIBER_BLOCKS)));
     }
-
     // Registers block into game at load
     public static void register (IEventBus eventBus) {
         BLOCKS.register(eventBus);

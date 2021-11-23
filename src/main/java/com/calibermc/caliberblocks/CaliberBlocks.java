@@ -19,10 +19,10 @@ import org.apache.logging.log4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CaliberBlocks.MOD_ID)
 public class CaliberBlocks {
+    // Set MOD_ID
     public static final String MOD_ID = "caliberblocks";
-
-    // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    // This logger is used to write text to the console and the log file.
+    private static final Logger LOGGER = LogManager.getLogger("Caliber Blocks");
 
 
     public CaliberBlocks() {
@@ -44,8 +44,8 @@ public class CaliberBlocks {
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 
-
     }
+
     private void setupClient(final FMLClientSetupEvent event) {
         ModRenderLayers.Layers();
     }
