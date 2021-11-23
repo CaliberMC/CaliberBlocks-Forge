@@ -1,8 +1,8 @@
 package com.calibermc.caliberblocks;
 
 
-import com.calibermc.caliberblocks.block.ModBlocks;
-import com.calibermc.caliberblocks.items.ModItems;
+import com.calibermc.caliberblocks.registry.ModBlocks;
+import com.calibermc.caliberblocks.registry.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,8 +11,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CaliberBlocks.MOD_ID)

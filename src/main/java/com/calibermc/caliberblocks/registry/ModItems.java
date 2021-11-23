@@ -1,4 +1,4 @@
-package com.calibermc.caliberblocks.items;
+package com.calibermc.caliberblocks.registry;
 
 import com.calibermc.caliberblocks.CaliberBlocks;
 import net.minecraft.world.item.CreativeModeTab;
