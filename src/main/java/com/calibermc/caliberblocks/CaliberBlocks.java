@@ -1,12 +1,16 @@
 package com.calibermc.caliberblocks;
 
 
+import com.calibermc.caliberblocks.custom.ModRenderLayers;
 import com.calibermc.caliberblocks.registry.ModBlocks;
 import com.calibermc.caliberblocks.registry.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -39,7 +43,11 @@ public class CaliberBlocks {
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-    }
 
+
+    }
+    private void setupClient(final FMLClientSetupEvent event) {
+        ModRenderLayers.Layers();
+    }
 
 }

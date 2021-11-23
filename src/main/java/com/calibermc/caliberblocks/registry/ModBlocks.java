@@ -104,11 +104,11 @@ public class ModBlocks {
     // DECORATIVE BLOCKS
     // - Barrels
     public static final RegistryObject <Block> HORIZONTAL_BARREL = registerBlock("horizontal_barrel",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD)), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD).noOcclusion()), ModCreativeTab.TAB_CALIBER_DECORATIONS);
     public static final RegistryObject <Block> VERTICAL_BARREL = registerBlock("vertical_barrel",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD)), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD).noOcclusion()), ModCreativeTab.TAB_CALIBER_DECORATIONS);
     public static final RegistryObject <Block> EMPTY_BARREL = registerBlock("empty_barrel",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD)), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD).noOcclusion()), ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
 
 
