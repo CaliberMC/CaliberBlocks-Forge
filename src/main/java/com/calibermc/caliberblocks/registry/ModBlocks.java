@@ -73,6 +73,7 @@ public class ModBlocks {
     public static final RegistryObject <Block> RED_KEEP_WALL_DIRTY = registerBlock("red_keep_wall_dirty", () -> new ModWallBlock());
     public static final RegistryObject <Block> RED_KEEP_WALL_MUDDY = registerBlock("red_keep_wall_muddy", () -> new ModWallBlock());
 
+
     // --- The Sept
 
     // --- Dragon Pit
@@ -89,6 +90,9 @@ public class ModBlocks {
     public static final RegistryObject <Block> BARREL_VERTICAL = registerBlock("barrel_vertical", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
     public static final RegistryObject <Block> BARREL_EMPTY = registerBlock("barrel_empty", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
     public static final RegistryObject <Block> BARREL_WATER = registerBlock("barrel_water", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_SALT = registerBlock("barrel_salt", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_APPLES = registerBlock("barrel_apples", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrel_grain", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
 
     /** DO NOT MODIFY BELOW**/

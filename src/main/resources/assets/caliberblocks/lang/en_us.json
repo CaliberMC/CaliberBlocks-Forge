@@ -46,6 +46,9 @@
   "block.caliberblocks.barrel_vertical": "Vertical Barrel",
   "block.caliberblocks.barrel_empty": "Empty Barrel",
   "block.caliberblocks.barrel_water": "Water Barrel",
+  "block.caliberblocks.barrel_salt": "Salt Barrel",
+  "block.caliberblocks.barrel_apples": "Apple Barrel",
+  "block.caliberblocks.barrel_grain": "Grain Barrel",
 
   "item.caliberblocks.dragon_glass_sword": "Dragon Glass Sword",
   "message.dragon_glass_sword": "Dragon Glass Sword with charge %s"
