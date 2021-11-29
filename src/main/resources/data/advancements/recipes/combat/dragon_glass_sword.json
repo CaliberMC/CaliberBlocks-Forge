@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "caliberblocks:dragon_glass_sword"
+    ]
+  },
+  "criteria": {
+    "sticks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "caliberblocks:dragon_glass_sword"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sticks",
+      "has_the_recipe"
+    ]
+  ]
+}

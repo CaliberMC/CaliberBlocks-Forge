@@ -4,8 +4,6 @@ package com.calibermc.caliberblocks;
 import com.calibermc.caliberblocks.custom.ModRenderLayers;
 import com.calibermc.caliberblocks.registry.ModBlocks;
 import com.calibermc.caliberblocks.registry.ModItems;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,17 +20,27 @@ public class CaliberBlocks {
     // Set MOD_ID
     public static final String MOD_ID = "caliberblocks";
     // This logger is used to write text to the console and the log file.
-    private static final Logger LOGGER = LogManager.getLogger("Caliber Blocks");
+    public static final Logger LOGGER = LogManager.getLogger("Caliber Blocks");
+
+    // Order of initialization:
+    // At setup:
+    //   1. Registration
+    //   2. Config reading (for client + common)
+    //   3. FMLCommonSetupEvent
+    // After world load:
+    //   4. Config reading for server
 
 
     public CaliberBlocks() {
+        //Registration.init();
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        eventBus.addListener(this::setup);
+        //eventBus.addListener(ClientSetup::setup);
+
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-
-        eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

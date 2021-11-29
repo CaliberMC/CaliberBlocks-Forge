@@ -1,6 +1,10 @@
 package com.calibermc.caliberblocks.registry;
 
 import com.calibermc.caliberblocks.CaliberBlocks;
+import com.calibermc.caliberblocks.custom.ModBarrelBlock;
+import com.calibermc.caliberblocks.custom.ModBuildingBlock;
+import com.calibermc.caliberblocks.custom.ModSlabBlock;
+import com.calibermc.caliberblocks.custom.ModWallBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -14,7 +18,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.function.Supplier;
 
 public class ModBlocks {
-    // Registers blocks
+    // Creates Registry for Blocks
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CaliberBlocks.MOD_ID);
 
@@ -27,35 +31,21 @@ public class ModBlocks {
     // -- Kings Landing
     // --- Red Keep
     // ---- Blocks
-    public static final RegistryObject <Block> RED_KEEP_BLOCK = registerBlock("red_keep_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_SMOOTH = registerBlock("red_keep_block_smooth",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_ORNATE = registerBlock("red_keep_block_ornate",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_CARVED = registerBlock("red_keep_block_carved",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_CRACKED = registerBlock("red_keep_block_cracked",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_WEATHERED = registerBlock("red_keep_block_weathered",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_DIRTY = registerBlock("red_keep_block_dirty",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_MUDDY = registerBlock("red_keep_block_muddy",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject <Block> RED_KEEP_BLOCK = registerBlock("red_keep_block", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_SMOOTH = registerBlock("red_keep_block_smooth", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_ORNATE = registerBlock("red_keep_block_ornate", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_CARVED = registerBlock("red_keep_block_carved", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_CRACKED = registerBlock("red_keep_block_cracked", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_WEATHERED = registerBlock("red_keep_block_weathered", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_DIRTY = registerBlock("red_keep_block_dirty", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_MUDDY = registerBlock("red_keep_block_muddy", () -> new ModBuildingBlock());
     // ---- Slabs
-    public static final RegistryObject <Block> RED_KEEP_SLAB = registerBlock("red_keep_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_SLAB_SMOOTH = registerBlock("red_keep_slab_smooth",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_SLAB_CRACKED = registerBlock("red_keep_slab_cracked",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_SLAB_WEATHERED = registerBlock("red_keep_slab_weathered",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_SLAB_DIRTY = registerBlock("red_keep_slab_dirty",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_SLAB_MUDDY = registerBlock("red_keep_slab_muddy",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject <Block> RED_KEEP_SLAB = registerBlock("red_keep_slab", () -> new ModSlabBlock());
+    public static final RegistryObject <Block> RED_KEEP_SLAB_SMOOTH = registerBlock("red_keep_slab_smooth", () -> new ModSlabBlock());
+    public static final RegistryObject <Block> RED_KEEP_SLAB_CRACKED = registerBlock("red_keep_slab_cracked", () -> new ModSlabBlock());
+    public static final RegistryObject <Block> RED_KEEP_SLAB_WEATHERED = registerBlock("red_keep_slab_weathered", () -> new ModSlabBlock());
+    public static final RegistryObject <Block> RED_KEEP_SLAB_DIRTY = registerBlock("red_keep_slab_dirty", () -> new ModSlabBlock());
+    public static final RegistryObject <Block> RED_KEEP_SLAB_MUDDY = registerBlock("red_keep_slab_muddy", () -> new ModSlabBlock());
     // ---- Stairs
     public static final RegistryObject <Block> RED_KEEP_STAIRS = registerBlock("red_keep_stairs",
             () -> new StairBlock(() -> RED_KEEP_BLOCK.get().defaultBlockState(),
@@ -76,19 +66,12 @@ public class ModBlocks {
             () -> new StairBlock(() -> RED_KEEP_BLOCK_MUDDY.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
     // ---- Walls
-    public static final RegistryObject <Block> RED_KEEP_WALL = registerBlock("red_keep_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_WALL_SMOOTH = registerBlock("red_keep_wall_smooth",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_WALL_CRACKED = registerBlock("red_keep_wall_cracked",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_WALL_WEATHERED = registerBlock("red_keep_wall_weathered",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_WALL_DIRTY = registerBlock("red_keep_wall_dirty",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final RegistryObject <Block> RED_KEEP_WALL_MUDDY = registerBlock("red_keep_wall_muddy",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
+    public static final RegistryObject <Block> RED_KEEP_WALL = registerBlock("red_keep_wall", () -> new ModWallBlock());
+    public static final RegistryObject <Block> RED_KEEP_WALL_SMOOTH = registerBlock("red_keep_wall_smooth", () -> new ModWallBlock());
+    public static final RegistryObject <Block> RED_KEEP_WALL_CRACKED = registerBlock("red_keep_wall_cracked", () -> new ModWallBlock());
+    public static final RegistryObject <Block> RED_KEEP_WALL_WEATHERED = registerBlock("red_keep_wall_weathered", () -> new ModWallBlock());
+    public static final RegistryObject <Block> RED_KEEP_WALL_DIRTY = registerBlock("red_keep_wall_dirty", () -> new ModWallBlock());
+    public static final RegistryObject <Block> RED_KEEP_WALL_MUDDY = registerBlock("red_keep_wall_muddy", () -> new ModWallBlock());
 
     // --- The Sept
 
@@ -98,21 +81,17 @@ public class ModBlocks {
 
     // - The North
     // -- Winterfell
-    public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block", () -> new ModBuildingBlock());
 
     // DECORATIVE BLOCKS
     // - Barrels
-    public static final RegistryObject <Block> HORIZONTAL_BARREL = registerBlock("horizontal_barrel",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD).noOcclusion()), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> VERTICAL_BARREL = registerBlock("vertical_barrel",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD).noOcclusion()), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> EMPTY_BARREL = registerBlock("empty_barrel",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5f,17.5f).sound(SoundType.WOOD).noOcclusion()), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_HORIZONTAL = registerBlock("barrel_horizontal", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_VERTICAL = registerBlock("barrel_vertical", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_EMPTY = registerBlock("barrel_empty", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_WATER = registerBlock("barrel_water", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
 
-
-
+    /** DO NOT MODIFY BELOW**/
     // Registers block to a selected minecraft creative tab
     private static <T extends Block> RegistryObject <T> registerBlock (String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
