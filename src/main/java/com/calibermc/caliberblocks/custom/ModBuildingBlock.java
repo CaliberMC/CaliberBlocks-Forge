@@ -11,6 +11,7 @@ public class ModBuildingBlock extends Block {
         super(Properties.of(Material.STONE)
                 .strength(2.0f,30.0f)
                 .requiresCorrectToolForDrops()
-                .sound(SoundType.STONE));
+                .sound(SoundType.STONE)
+                .jumpFactor(0));
     }
 }
