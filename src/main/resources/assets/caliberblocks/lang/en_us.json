@@ -50,6 +50,9 @@
   "block.caliberblocks.barrel_apples": "Apple Barrel",
   "block.caliberblocks.barrel_grain": "Grain Barrel",
 
+  "block.caliberblocks.chair_kl_tall": "KL Tall Chair",
+  "block.caliberblocks.table_oak": "Oak Table",
+
   "item.caliberblocks.dragon_glass_sword": "Dragon Glass Sword",
   "message.dragon_glass_sword": "Dragon Glass Sword with charge %s"
 

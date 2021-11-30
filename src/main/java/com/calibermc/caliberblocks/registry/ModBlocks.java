@@ -95,6 +95,9 @@ public class ModBlocks {
     public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrel_grain", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
 
+    public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("chair_kl_tall", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> TABLE_OAK = registerBlock("table_oak", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+
     /** DO NOT MODIFY BELOW**/
     // Registers block to a selected minecraft creative tab
     private static <T extends Block> RegistryObject <T> registerBlock (String name, Supplier<T> block, CreativeModeTab tab) {
