@@ -36,7 +36,7 @@ public class CaliberBlocks {
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         eventBus.addListener(this::setup);
-        //eventBus.addListener(ClientSetup::setup);
+        eventBus.addListener(this::setupClient);
 
 
         ModItems.register(eventBus);

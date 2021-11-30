@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "caliberblocks:dragon_glass_block",
+              "name": "caliberblocks:block/environment/dragon_glass_block",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",

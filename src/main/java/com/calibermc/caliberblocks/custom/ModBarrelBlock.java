@@ -22,7 +22,8 @@ public class ModBarrelBlock extends HorizontalDirectionalBlock {
         super(Properties.of(Material.WOOD)
                 .strength(2.5f,17.5f)
                 .sound(SoundType.WOOD)
-                .noOcclusion());
+                .noOcclusion()
+                .jumpFactor(0));
 
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }

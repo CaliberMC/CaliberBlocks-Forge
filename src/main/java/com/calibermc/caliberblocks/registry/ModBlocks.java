@@ -1,10 +1,7 @@
 package com.calibermc.caliberblocks.registry;
 
 import com.calibermc.caliberblocks.CaliberBlocks;
-import com.calibermc.caliberblocks.custom.ModBarrelBlock;
-import com.calibermc.caliberblocks.custom.ModBuildingBlock;
-import com.calibermc.caliberblocks.custom.ModSlabBlock;
-import com.calibermc.caliberblocks.custom.ModWallBlock;
+import com.calibermc.caliberblocks.custom.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -23,7 +20,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CaliberBlocks.MOD_ID);
 
     // ENVIRONMENT BLOCKS
-    public static final RegistryObject <Block> DRAGON_GLASS_BLOCK = registerBlock("dragon_glass_block",
+    public static final RegistryObject <Block> DRAGON_GLASS_BLOCK = registerBlock("environment/dragon_glass_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     // REGION SPECIFIC BLOCKS
@@ -31,47 +28,47 @@ public class ModBlocks {
     // -- Kings Landing
     // --- Red Keep
     // ---- Blocks
-    public static final RegistryObject <Block> RED_KEEP_BLOCK = registerBlock("red_keep_block", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_SMOOTH = registerBlock("red_keep_block_smooth", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_ORNATE = registerBlock("red_keep_block_ornate", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_CARVED = registerBlock("red_keep_block_carved", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_CRACKED = registerBlock("red_keep_block_cracked", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_WEATHERED = registerBlock("red_keep_block_weathered", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_DIRTY = registerBlock("red_keep_block_dirty", () -> new ModBuildingBlock());
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_MUDDY = registerBlock("red_keep_block_muddy", () -> new ModBuildingBlock());
+    public static final RegistryObject <Block> RED_KEEP_BLOCK = registerBlock("building/blocks/red_keep_block", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_SMOOTH = registerBlock("building/blocks/red_keep_block_smooth", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_ORNATE = registerBlock("building/blocks/red_keep_block_ornate", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_CARVED = registerBlock("building/blocks/red_keep_block_carved", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_CRACKED = registerBlock("building/blocks/red_keep_block_cracked", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_WEATHERED = registerBlock("building/blocks/red_keep_block_weathered", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_DIRTY = registerBlock("building/blocks/red_keep_block_dirty", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_BLOCK_MUDDY = registerBlock("building/blocks/red_keep_block_muddy", ModBuildingBlock::new);
     // ---- Slabs
-    public static final RegistryObject <Block> RED_KEEP_SLAB = registerBlock("red_keep_slab", () -> new ModSlabBlock());
-    public static final RegistryObject <Block> RED_KEEP_SLAB_SMOOTH = registerBlock("red_keep_slab_smooth", () -> new ModSlabBlock());
-    public static final RegistryObject <Block> RED_KEEP_SLAB_CRACKED = registerBlock("red_keep_slab_cracked", () -> new ModSlabBlock());
-    public static final RegistryObject <Block> RED_KEEP_SLAB_WEATHERED = registerBlock("red_keep_slab_weathered", () -> new ModSlabBlock());
-    public static final RegistryObject <Block> RED_KEEP_SLAB_DIRTY = registerBlock("red_keep_slab_dirty", () -> new ModSlabBlock());
-    public static final RegistryObject <Block> RED_KEEP_SLAB_MUDDY = registerBlock("red_keep_slab_muddy", () -> new ModSlabBlock());
+    public static final RegistryObject <Block> RED_KEEP_SLAB = registerBlock("building/slabs/red_keep_slab", ModSlabBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_SLAB_SMOOTH = registerBlock("building/slabs/red_keep_slab_smooth", ModSlabBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_SLAB_CRACKED = registerBlock("building/slabs/red_keep_slab_cracked", ModSlabBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_SLAB_WEATHERED = registerBlock("building/slabs/red_keep_slab_weathered", ModSlabBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_SLAB_DIRTY = registerBlock("building/slabs/red_keep_slab_dirty", ModSlabBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_SLAB_MUDDY = registerBlock("building/slabs/red_keep_slab_muddy", ModSlabBlock::new);
     // ---- Stairs
-    public static final RegistryObject <Block> RED_KEEP_STAIRS = registerBlock("red_keep_stairs",
+    public static final RegistryObject <Block> RED_KEEP_STAIRS = registerBlock("building/stairs/red_keep_stairs",
             () -> new StairBlock(() -> RED_KEEP_BLOCK.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_SMOOTH = registerBlock("red_keep_stairs_smooth",
+    public static final RegistryObject <Block> RED_KEEP_STAIRS_SMOOTH = registerBlock("building/stairs/red_keep_stairs_smooth",
             () -> new StairBlock(() -> RED_KEEP_BLOCK_SMOOTH.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_CRACKED = registerBlock("red_keep_stairs_cracked",
+    public static final RegistryObject <Block> RED_KEEP_STAIRS_CRACKED = registerBlock("building/stairs/red_keep_stairs_cracked",
             () -> new StairBlock(() -> RED_KEEP_BLOCK_CRACKED.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_WEATHERED = registerBlock("red_keep_stairs_weathered",
+    public static final RegistryObject <Block> RED_KEEP_STAIRS_WEATHERED = registerBlock("building/stairs/red_keep_stairs_weathered",
             () -> new StairBlock(() -> RED_KEEP_BLOCK_WEATHERED.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_DIRTY = registerBlock("red_keep_stairs_dirty",
+    public static final RegistryObject <Block> RED_KEEP_STAIRS_DIRTY = registerBlock("building/stairs/red_keep_stairs_dirty",
             () -> new StairBlock(() -> RED_KEEP_BLOCK_DIRTY.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_MUDDY = registerBlock("red_keep_stairs_muddy",
+    public static final RegistryObject <Block> RED_KEEP_STAIRS_MUDDY = registerBlock("building/stairs/red_keep_stairs_muddy",
             () -> new StairBlock(() -> RED_KEEP_BLOCK_MUDDY.get().defaultBlockState(),
                     (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
     // ---- Walls
-    public static final RegistryObject <Block> RED_KEEP_WALL = registerBlock("red_keep_wall", () -> new ModWallBlock());
-    public static final RegistryObject <Block> RED_KEEP_WALL_SMOOTH = registerBlock("red_keep_wall_smooth", () -> new ModWallBlock());
-    public static final RegistryObject <Block> RED_KEEP_WALL_CRACKED = registerBlock("red_keep_wall_cracked", () -> new ModWallBlock());
-    public static final RegistryObject <Block> RED_KEEP_WALL_WEATHERED = registerBlock("red_keep_wall_weathered", () -> new ModWallBlock());
-    public static final RegistryObject <Block> RED_KEEP_WALL_DIRTY = registerBlock("red_keep_wall_dirty", () -> new ModWallBlock());
-    public static final RegistryObject <Block> RED_KEEP_WALL_MUDDY = registerBlock("red_keep_wall_muddy", () -> new ModWallBlock());
+    public static final RegistryObject <Block> RED_KEEP_WALL = registerBlock("building/walls/red_keep_wall", ModWallBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_WALL_SMOOTH = registerBlock("building/walls/red_keep_wall_smooth", ModWallBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_WALL_CRACKED = registerBlock("building/walls/red_keep_wall_cracked", ModWallBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_WALL_WEATHERED = registerBlock("building/walls/red_keep_wall_weathered", ModWallBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_WALL_DIRTY = registerBlock("building/walls/red_keep_wall_dirty", ModWallBlock::new);
+    public static final RegistryObject <Block> RED_KEEP_WALL_MUDDY = registerBlock("building/walls/red_keep_wall_muddy", ModWallBlock::new);
 
 
     // --- The Sept
@@ -82,21 +79,23 @@ public class ModBlocks {
 
     // - The North
     // -- Winterfell
-    public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block", () -> new ModBuildingBlock());
+   // public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block", () -> new ModBuildingBlock());
 
     // DECORATIVE BLOCKS
     // - Barrels
-    public static final RegistryObject <Block> BARREL_HORIZONTAL = registerBlock("barrel_horizontal", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_VERTICAL = registerBlock("barrel_vertical", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_EMPTY = registerBlock("barrel_empty", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_WATER = registerBlock("barrel_water", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_SALT = registerBlock("barrel_salt", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_APPLES = registerBlock("barrel_apples", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrel_grain", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_HORIZONTAL = registerBlock("barrels/barrel_horizontal", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_VERTICAL = registerBlock("barrels/barrel_vertical", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_EMPTY = registerBlock("barrels/barrel_empty", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_WATER = registerBlock("barrels/barrel_water", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_SALT = registerBlock("barrels/barrel_salt", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_APPLES = registerBlock("barrels/barrel_apples", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrels/barrel_grain", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
 
-    public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("chair_kl_tall", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> TABLE_OAK = registerBlock("table_oak", () -> new ModBarrelBlock(), ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("furniture/chairs/chair_kl_tall", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> TABLE_OAK = registerBlock("furniture/tables/table_oak", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+
+    public static final RegistryObject <Block> WINE_GLASSES = registerBlock("table_decor/wine_glasses", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     /** DO NOT MODIFY BELOW**/
     // Registers block to a selected minecraft creative tab
