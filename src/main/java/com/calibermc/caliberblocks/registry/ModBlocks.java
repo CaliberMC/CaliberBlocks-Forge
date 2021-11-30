@@ -90,8 +90,8 @@ public class ModBlocks {
     public static final RegistryObject <Block> BARREL_SALT = registerBlock("barrels/barrel_salt", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
     public static final RegistryObject <Block> BARREL_APPLES = registerBlock("barrels/barrel_apples", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
     public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrels/barrel_grain", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_POTATOES = registerBlock("barrels/barrel_potatoes", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);    // - Furniture
 
-    // - Furniture
     // -- Chairs
     public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("furniture/chairs/chair_kl_tall", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 

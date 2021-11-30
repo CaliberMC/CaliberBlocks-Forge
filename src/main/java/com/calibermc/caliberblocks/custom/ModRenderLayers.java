@@ -14,6 +14,8 @@ public class ModRenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BARREL_GRAIN.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BARREL_WATER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BARREL_APPLES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BARREL_POTATOES.get(), RenderType.cutout());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHAIR_KL_TALL.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TABLE_OAK.get(), RenderType.cutout());
