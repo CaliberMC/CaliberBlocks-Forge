@@ -2,6 +2,9 @@ package com.calibermc.caliberblocks.registry;
 
 import com.calibermc.caliberblocks.CaliberBlocks;
 import com.calibermc.caliberblocks.custom.*;
+import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelHorizontal;
+import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelVertical;
+import com.calibermc.caliberblocks.custom.blocks.furniture.chairs.ChairTall;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -83,20 +86,21 @@ public class ModBlocks {
 
     // DECORATIVE BLOCKS
     // - Barrels
-    public static final RegistryObject <Block> BARREL_HORIZONTAL = registerBlock("barrels/barrel_horizontal", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_VERTICAL = registerBlock("barrels/barrel_vertical", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_EMPTY = registerBlock("barrels/barrel_empty", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_WATER = registerBlock("barrels/barrel_water", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_SALT = registerBlock("barrels/barrel_salt", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_APPLES = registerBlock("barrels/barrel_apples", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrels/barrel_grain", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> BARREL_POTATOES = registerBlock("barrels/barrel_potatoes", ModBarrelBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);    // - Furniture
+    public static final RegistryObject <Block> BARREL_HORIZONTAL = registerBlock("barrels/barrel_horizontal", BarrelHorizontal::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_VERTICAL = registerBlock("barrels/barrel_vertical", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_EMPTY = registerBlock("barrels/barrel_empty", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_WATER = registerBlock("barrels/barrel_water", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_SALT = registerBlock("barrels/barrel_salt", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_APPLES = registerBlock("barrels/barrel_apples", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_GRAIN = registerBlock("barrels/barrel_grain", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> BARREL_POTATOES = registerBlock("barrels/barrel_potatoes", BarrelVertical::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);    // - Furniture
 
     // -- Chairs
-    public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("furniture/chairs/chair_kl_tall", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("furniture/chairs/chair_kl_tall", ChairTall::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     // -- Tables
     public static final RegistryObject <Block> TABLE_OAK = registerBlock("furniture/tables/table_oak", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> PARTNER_DESK = registerBlock("furniture/tables/partner_desk", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     // - Table Decor
     public static final RegistryObject <Block> WINE_GLASSES = registerBlock("table_decor/wine_glasses", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);

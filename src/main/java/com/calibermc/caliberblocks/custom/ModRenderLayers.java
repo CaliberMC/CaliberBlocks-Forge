@@ -19,7 +19,9 @@ public class ModRenderLayers {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHAIR_KL_TALL.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TABLE_OAK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PARTNER_DESK.get(), RenderType.cutout());
 
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WINE_GLASSES.get(), RenderType.cutout());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WINE_GLASSES.get(), RenderType.translucent());
     }
 }

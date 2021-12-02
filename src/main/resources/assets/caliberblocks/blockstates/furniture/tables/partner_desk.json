@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "caliberblocks:block/furniture/tables/partner_desk",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "caliberblocks:block/furniture/tables/partner_desk"
+    },
+    "facing=south": {
+      "model": "caliberblocks:block/furniture/tables/partner_desk",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "caliberblocks:block/furniture/tables/partner_desk",
+      "y": 270
+    }
+  }
+}
