@@ -5,6 +5,9 @@ import com.calibermc.caliberblocks.custom.*;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelHorizontal;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelVertical;
 import com.calibermc.caliberblocks.custom.blocks.furniture.chairs.ChairTall;
+import com.calibermc.caliberblocks.custom.blocks.structures.PillarBaseMd;
+import com.calibermc.caliberblocks.custom.blocks.structures.PillarCenterMd;
+import com.calibermc.caliberblocks.custom.blocks.structures.PillarTopMd;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -83,6 +86,11 @@ public class ModBlocks {
     // - The North
     // -- Winterfell
    // public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block", () -> new ModBuildingBlock());
+
+    // Structures
+    public static final RegistryObject <Block> PILLAR_BASE_MD = registerBlock("structures/pillar_base_md", PillarBaseMd::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> PILLAR_CENTER_MD = registerBlock("structures/pillar_center_md", PillarCenterMd::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> PILLAR_TOP_MD = registerBlock("structures/pillar_top_md", PillarTopMd::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     // DECORATIVE BLOCKS
     // - Barrels

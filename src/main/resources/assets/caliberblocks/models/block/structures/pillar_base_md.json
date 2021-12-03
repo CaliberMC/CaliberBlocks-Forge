@@ -1,0 +1,177 @@
+{
+	"credit": "Design by CaliberMC - Charm8er",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "caliberblocks:block/structures/pillar_base_md",
+		"particle": "caliberblocks:block/structures/pillar_base_md"
+	},
+	"elements": [
+		{
+			"name": "octagon",
+			"from": [5.10051, 1, 1],
+			"to": [10.89949, 3.5, 15],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8.125, 5.75, 8.84375, 6.0625], "texture": "#0"},
+				"east": {"uv": [7.75, 0.75, 9.5, 1.0625], "texture": "#0"},
+				"south": {"uv": [6.125, 8.125, 6.84375, 8.4375], "texture": "#0"},
+				"west": {"uv": [7.75, 1.25, 9.5, 1.5625], "texture": "#0"},
+				"up": {"uv": [5.59375, 5.5, 4.875, 3.75], "texture": "#0"},
+				"down": {"uv": [5.59375, 5.625, 4.875, 7.375], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.10051, 1, 1],
+			"to": [10.89949, 3.5, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [7, 8.125, 7.71875, 8.4375], "texture": "#0"},
+				"east": {"uv": [8, 1.75, 9.75, 2.0625], "texture": "#0"},
+				"south": {"uv": [7.875, 8.125, 8.59375, 8.4375], "texture": "#0"},
+				"west": {"uv": [8, 2.25, 9.75, 2.5625], "texture": "#0"},
+				"up": {"uv": [6.46875, 5.5, 5.75, 3.75], "texture": "#0"},
+				"down": {"uv": [6.46875, 5.625, 5.75, 7.375], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [1, 1, 5.10051],
+			"to": [15, 3.5, 10.89949],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 2.75, 9.75, 3.0625], "texture": "#0"},
+				"east": {"uv": [3.75, 8.25, 4.46875, 8.5625], "texture": "#0"},
+				"south": {"uv": [8.125, 3.25, 9.875, 3.5625], "texture": "#0"},
+				"west": {"uv": [4.625, 8.25, 5.34375, 8.5625], "texture": "#0"},
+				"up": {"uv": [7.625, 0.71875, 5.875, 0], "texture": "#0"},
+				"down": {"uv": [7.625, 0.875, 5.875, 1.59375], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [1, 1, 5.10051],
+			"to": [15, 3.5, 10.89949],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8.125, 3.75, 9.875, 4.0625], "texture": "#0"},
+				"east": {"uv": [8.25, 7.375, 8.96875, 7.6875], "texture": "#0"},
+				"south": {"uv": [8.125, 4.25, 9.875, 4.5625], "texture": "#0"},
+				"west": {"uv": [5.5, 8.625, 6.21875, 8.9375], "texture": "#0"},
+				"up": {"uv": [1.75, 6.71875, 0, 6], "texture": "#0"},
+				"down": {"uv": [3.625, 6, 1.875, 6.71875], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.51472, 2, 2],
+			"to": [10.48528, 16, 14],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7.5, 8]},
+			"faces": {
+				"north": {"uv": [3.75, 6, 4.375, 7.75], "texture": "#0"},
+				"east": {"uv": [0, 2.25, 1.5, 4], "texture": "#0"},
+				"south": {"uv": [6.5, 1.75, 7.125, 3.5], "texture": "#0"},
+				"west": {"uv": [1.625, 2.25, 3.125, 4], "texture": "#0"},
+				"up": {"uv": [3.625, 8.375, 3, 6.875], "texture": "#0"},
+				"down": {"uv": [7.875, 1.75, 7.25, 3.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [5.51472, 2, 2],
+			"to": [10.48528, 16, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.5, 8]},
+			"faces": {
+				"north": {"uv": [6.625, 3.625, 7.25, 5.375], "texture": "#0"},
+				"east": {"uv": [3.25, 2.25, 4.75, 4], "texture": "#0"},
+				"south": {"uv": [6.625, 5.5, 7.25, 7.25], "texture": "#0"},
+				"west": {"uv": [0, 4.125, 1.5, 5.875], "texture": "#0"},
+				"up": {"uv": [8, 4.875, 7.375, 3.375], "texture": "#0"},
+				"down": {"uv": [8, 5, 7.375, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [2, 2, 5.51472],
+			"to": [14, 16, 10.48528],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7.5, 8]},
+			"faces": {
+				"north": {"uv": [1.625, 4.125, 3.125, 5.875], "texture": "#0"},
+				"east": {"uv": [0, 6.875, 0.625, 8.625], "texture": "#0"},
+				"south": {"uv": [3.25, 4.125, 4.75, 5.875], "texture": "#0"},
+				"west": {"uv": [0.75, 6.875, 1.375, 8.625], "texture": "#0"},
+				"up": {"uv": [8.125, 8, 6.625, 7.375], "texture": "#0"},
+				"down": {"uv": [8.875, 6.625, 7.375, 7.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [2, 2, 5.51472],
+			"to": [14, 16, 10.48528],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.5, 8]},
+			"faces": {
+				"north": {"uv": [4.25, 0, 5.75, 1.75], "texture": "#0"},
+				"east": {"uv": [1.5, 6.875, 2.125, 8.625], "texture": "#0"},
+				"south": {"uv": [4.875, 1.875, 6.375, 3.625], "texture": "#0"},
+				"west": {"uv": [2.25, 6.875, 2.875, 8.625], "texture": "#0"},
+				"up": {"uv": [6, 8.125, 4.5, 7.5], "texture": "#0"},
+				"down": {"uv": [9.25, 0, 7.75, 0.625], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, -0.25],
+			"to": [16, 1, 16.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.25]},
+			"faces": {
+				"north": {"uv": [8.125, 5.25, 10.125, 5.375], "texture": "#0"},
+				"east": {"uv": [8.125, 4.75, 10.1875, 4.875], "texture": "#0"},
+				"south": {"uv": [8.125, 5.5, 10.125, 5.625], "texture": "#0"},
+				"west": {"uv": [8.125, 5, 10.1875, 5.125], "texture": "#0"},
+				"up": {"uv": [2, 2.0625, 0, 0], "texture": "#0"},
+				"down": {"uv": [4.125, 0, 2.125, 2.0625], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [42, 0, 0],
+			"translation": [0, 1.75, -0.25],
+			"scale": [0.38, 0.38, 0.38]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [42, 0, 0],
+			"translation": [0, 1.75, -0.25],
+			"scale": [0.38, 0.38, 0.38]
+		},
+		"firstperson_righthand": {
+			"rotation": [42, 0, 0],
+			"translation": [0, 1.75, -0.25],
+			"scale": [0.38, 0.38, 0.38]
+		},
+		"firstperson_lefthand": {
+			"rotation": [42, 0, 0],
+			"translation": [0, 1.75, -0.25],
+			"scale": [0.38, 0.38, 0.38]
+		},
+		"ground": {
+			"translation": [0, 4.75, 0]
+		},
+		"gui": {
+			"rotation": [12, 139, 0],
+			"translation": [0, 0.25, 0],
+			"scale": [0.66, 0.66, 0.66]
+		},
+		"fixed": {
+			"translation": [0, 0.5, -2.25],
+			"scale": [0.66, 0.66, 0.66]
+		}
+	},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+		}
+	]
+}

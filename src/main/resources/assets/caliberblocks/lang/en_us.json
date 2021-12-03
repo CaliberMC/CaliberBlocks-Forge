@@ -43,6 +43,10 @@
 
   "block.caliberblocks.building.blocks.winterfell_block": "Winterfell Block",
 
+  "block.caliberblocks.structures.pillar_base_md": "Medium Pillar Base",
+  "block.caliberblocks.structures.pillar_center_md": "Medium Pillar Center",
+  "block.caliberblocks.structures.pillar_top_md": "Medium Pillar Top",
+
   "block.caliberblocks.barrels.barrel_horizontal": "Horizontal Barrel",
   "block.caliberblocks.barrels.barrel_vertical": "Vertical Barrel",
   "block.caliberblocks.barrels.barrel_empty": "Empty Barrel",
