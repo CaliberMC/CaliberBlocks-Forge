@@ -1,4 +1,4 @@
-package com.calibermc.caliberblocks.custom.blocks.structures;
+package com.calibermc.caliberblocks.custom.blocks.furniture.tables;
 
 import com.calibermc.caliberblocks.util.ModCalculations;
 import net.minecraft.core.BlockPos;
@@ -23,20 +23,19 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 /**Custom block for decorations**/
-public class PillarBaseMd extends HorizontalDirectionalBlock {
+public class Table extends HorizontalDirectionalBlock {
 
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    public PillarBaseMd() {
-        super(Properties.of(Material.STONE)
-                .strength(2.0f,30.0f)
-                .sound(SoundType.STONE)
+    public Table() {
+        super(Properties.of(Material.WOOD)
+                .strength(2.5f,17.5f)
+                .sound(SoundType.WOOD)
                 .noOcclusion()
                 .jumpFactor(0));
 
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
         runCalculation(SHAPE.orElse(Shapes.block()));
-
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
@@ -50,15 +49,17 @@ public class PillarBaseMd extends HorizontalDirectionalBlock {
     private static final Map<Direction,VoxelShape> SHAPES = new EnumMap<>(Direction.class);
 
     private static final Optional<VoxelShape> SHAPE = Stream.of(
-            Block.box(5.10051, 1, 1, 10.89949, 3.5, 15),
-            Block.box(5.10051, 1, 1, 10.89949, 3.5, 15),
-            Block.box(1, 1, 5.10051, 15, 3.5, 10.89949),
-            Block.box(1, 1, 5.10051, 15, 3.5, 10.89949),
-            Block.box(5.51472, 2, 2, 10.48528, 16, 14),
-            Block.box(5.51472, 2, 2, 10.48528, 16, 14),
-            Block.box(2, 2, 5.51472, 14, 16, 10.48528),
-            Block.box(2, 2, 5.51472, 14, 16, 10.48528),
-            Block.box(0, 0, -0.25, 16, 1, 16.25)
+            Block.box(1, 0, 1, 2, 14, 3),
+            Block.box(1, 0, 14, 3, 14, 15),
+            Block.box(1, 0, 13, 2, 14, 14),
+            Block.box(2, 0, 1, 3, 14, 2),
+            Block.box(13, 0, 1, 15, 14, 2),
+            Block.box(14, 0, 2, 15, 14, 3),
+            Block.box(14, 0, 13, 15, 14, 15),
+            Block.box(13, 0, 14, 14, 14, 15),
+            Block.box(0, 14, 0, 16, 14.5, 16),
+            Block.box(0, 15.5, 0, 16, 16, 16),
+            Block.box(0.5, 14.5, 0.5, 15.5, 15.5, 15.5)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
 
     protected void runCalculation(VoxelShape shape) {

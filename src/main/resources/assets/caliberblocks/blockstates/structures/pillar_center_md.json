@@ -1,6 +1,19 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "caliberblocks:block/structures/pillar_center_md"
+  "variants": {
+    "facing=east": {
+      "model": "caliberblocks:block/structures/pillar_center_md",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "caliberblocks:block/structures/pillar_center_md"
+    },
+    "facing=south": {
+      "model": "caliberblocks:block/structures/pillar_center_md",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "caliberblocks:block/structures/pillar_center_md",
+      "y": 270
+    }
   }
 }

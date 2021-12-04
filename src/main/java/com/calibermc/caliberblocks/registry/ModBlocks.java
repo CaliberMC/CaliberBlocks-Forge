@@ -5,9 +5,12 @@ import com.calibermc.caliberblocks.custom.*;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelHorizontal;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelVertical;
 import com.calibermc.caliberblocks.custom.blocks.furniture.chairs.ChairTall;
+import com.calibermc.caliberblocks.custom.blocks.furniture.tables.PartnerDesk;
+import com.calibermc.caliberblocks.custom.blocks.furniture.tables.Table;
 import com.calibermc.caliberblocks.custom.blocks.structures.PillarBaseMd;
 import com.calibermc.caliberblocks.custom.blocks.structures.PillarCenterMd;
 import com.calibermc.caliberblocks.custom.blocks.structures.PillarTopMd;
+import com.calibermc.caliberblocks.custom.blocks.table_decor.WineGlasses;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -107,11 +110,11 @@ public class ModBlocks {
     public static final RegistryObject <Block> CHAIR_KL_TALL = registerBlock("furniture/chairs/chair_kl_tall", ChairTall::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     // -- Tables
-    public static final RegistryObject <Block> TABLE_OAK = registerBlock("furniture/tables/table_oak", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
-    public static final RegistryObject <Block> PARTNER_DESK = registerBlock("furniture/tables/partner_desk", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> TABLE_OAK = registerBlock("furniture/tables/table_oak", Table::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> PARTNER_DESK = registerBlock("furniture/tables/partner_desk", PartnerDesk::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     // - Table Decor
-    public static final RegistryObject <Block> WINE_GLASSES = registerBlock("table_decor/wine_glasses", ModDecorationlBlock::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
+    public static final RegistryObject <Block> WINE_GLASSES = registerBlock("table_decor/wine_glasses", WineGlasses::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
 
     /** DO NOT MODIFY BELOW**/
     // Registers block to a selected minecraft creative tab
