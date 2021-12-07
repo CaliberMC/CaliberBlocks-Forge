@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "caliberblocks:block/building/blocks/rk_sandstone_muddy"
+  }
+}

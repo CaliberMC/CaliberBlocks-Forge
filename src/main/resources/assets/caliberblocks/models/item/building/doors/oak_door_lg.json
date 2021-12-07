@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "caliberblocks:item/oak_door_lg"
+  }
+}

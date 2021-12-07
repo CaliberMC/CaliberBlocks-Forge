@@ -1,9 +1,11 @@
 package com.calibermc.caliberblocks.registry;
 
 import com.calibermc.caliberblocks.CaliberBlocks;
-import com.calibermc.caliberblocks.custom.*;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelHorizontal;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelVertical;
+import com.calibermc.caliberblocks.custom.blocks.building.blocks.*;
+import com.calibermc.caliberblocks.custom.blocks.building.doors.ModDoorBlock;
+import com.calibermc.caliberblocks.custom.blocks.building.roofs.RoofMidClay;
 import com.calibermc.caliberblocks.custom.blocks.furniture.chairs.ChairTall;
 import com.calibermc.caliberblocks.custom.blocks.furniture.tables.PartnerDesk;
 import com.calibermc.caliberblocks.custom.blocks.furniture.tables.Table;
@@ -32,52 +34,51 @@ public class ModBlocks {
     public static final RegistryObject <Block> DRAGON_GLASS_BLOCK = registerBlock("environment/dragon_glass_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+    // UNIVERSAL BLOCKS
+    // - Building
+    // -- Doors
+    public static final RegistryObject <Block> OAK_DOOR_LG = registerBlock("building/blocks/oak_door_lg", ModDoorBlock::new);
+
+    // -- Roofs
+    public static final RegistryObject <Block> ROOF_TERRACOTTA_MID = registerBlock("building/roofs/roof_terracotta_mid", RoofMidClay::new);
+
     // REGION SPECIFIC BLOCKS
     // - Crownlands
     // -- Kings Landing
+    // --- Roads
+    public static final RegistryObject <Block> KL_COBBLESTONE = registerBlock("building/blocks/kl_cobblestone", BuildingBlock::new);
     // --- Red Keep
     // ---- Blocks
-    public static final RegistryObject <Block> RED_KEEP_BLOCK = registerBlock("building/blocks/red_keep_block", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_SMOOTH = registerBlock("building/blocks/red_keep_block_smooth", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_ORNATE = registerBlock("building/blocks/red_keep_block_ornate", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_CARVED = registerBlock("building/blocks/red_keep_block_carved", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_CRACKED = registerBlock("building/blocks/red_keep_block_cracked", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_WEATHERED = registerBlock("building/blocks/red_keep_block_weathered", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_DIRTY = registerBlock("building/blocks/red_keep_block_dirty", ModBuildingBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_BLOCK_MUDDY = registerBlock("building/blocks/red_keep_block_muddy", ModBuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE = registerBlock("building/blocks/rk_sandstone", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SMOOTH = registerBlock("building/blocks/rk_sandstone_smooth", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_ORNATE = registerBlock("building/blocks/rk_sandstone_ornate", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_CARVED = registerBlock("building/blocks/rk_sandstone_carved", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_CRACKED = registerBlock("building/blocks/rk_sandstone_cracked", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WEATHERED = registerBlock("building/blocks/rk_sandstone_weathered", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_DIRTY = registerBlock("building/blocks/rk_sandstone_dirty", BuildingBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_MUDDY = registerBlock("building/blocks/rk_sandstone_muddy", BuildingBlock::new);
+
     // ---- Slabs
-    public static final RegistryObject <Block> RED_KEEP_SLAB = registerBlock("building/slabs/red_keep_slab", ModSlabBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_SLAB_SMOOTH = registerBlock("building/slabs/red_keep_slab_smooth", ModSlabBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_SLAB_CRACKED = registerBlock("building/slabs/red_keep_slab_cracked", ModSlabBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_SLAB_WEATHERED = registerBlock("building/slabs/red_keep_slab_weathered", ModSlabBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_SLAB_DIRTY = registerBlock("building/slabs/red_keep_slab_dirty", ModSlabBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_SLAB_MUDDY = registerBlock("building/slabs/red_keep_slab_muddy", ModSlabBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SLAB = registerBlock("building/slabs/rk_sandstone_slab", ModSlabBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SLAB_SMOOTH = registerBlock("building/slabs/rk_sandstone_slab_smooth", ModSlabBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SLAB_CRACKED = registerBlock("building/slabs/rk_sandstone_slab_cracked", ModSlabBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SLAB_WEATHERED = registerBlock("building/slabs/rk_sandstone_slab_weathered", ModSlabBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SLAB_DIRTY = registerBlock("building/slabs/rk_sandstone_slab_dirty", ModSlabBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_SLAB_MUDDY = registerBlock("building/slabs/rk_sandstone_slab_muddy", ModSlabBlock::new);
     // ---- Stairs
-    public static final RegistryObject <Block> RED_KEEP_STAIRS = registerBlock("building/stairs/red_keep_stairs",
-            () -> new StairBlock(() -> RED_KEEP_BLOCK.get().defaultBlockState(),
-                    (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_SMOOTH = registerBlock("building/stairs/red_keep_stairs_smooth",
-            () -> new StairBlock(() -> RED_KEEP_BLOCK_SMOOTH.get().defaultBlockState(),
-                    (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_CRACKED = registerBlock("building/stairs/red_keep_stairs_cracked",
-            () -> new StairBlock(() -> RED_KEEP_BLOCK_CRACKED.get().defaultBlockState(),
-                    (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_WEATHERED = registerBlock("building/stairs/red_keep_stairs_weathered",
-            () -> new StairBlock(() -> RED_KEEP_BLOCK_WEATHERED.get().defaultBlockState(),
-                    (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_DIRTY = registerBlock("building/stairs/red_keep_stairs_dirty",
-            () -> new StairBlock(() -> RED_KEEP_BLOCK_DIRTY.get().defaultBlockState(),
-                    (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
-    public static final RegistryObject <Block> RED_KEEP_STAIRS_MUDDY = registerBlock("building/stairs/red_keep_stairs_muddy",
-            () -> new StairBlock(() -> RED_KEEP_BLOCK_MUDDY.get().defaultBlockState(),
-                    (BlockBehaviour.Properties.of(Material.STONE).strength(2.0f,30.0f).requiresCorrectToolForDrops().sound(SoundType.STONE))));
+    public static final RegistryObject <Block> RK_SANDSTONE_STAIRS = registerBlock("building/stairs/rk_sandstone_stairs", () -> new ModStairBlock (ModBlocks.RK_SANDSTONE.get().defaultBlockState()));
+    public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_SMOOTH = registerBlock("building/stairs/rk_sandstone_stairs_smooth", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_SMOOTH.get().defaultBlockState()));
+    public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_CRACKED = registerBlock("building/stairs/rk_sandstone_stairs_cracked", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_CRACKED.get().defaultBlockState()));
+    public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_WEATHERED = registerBlock("building/stairs/rk_sandstone_stairs_weathered", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_WEATHERED.get().defaultBlockState()));
+    public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_DIRTY = registerBlock("building/stairs/rk_sandstone_stairs_dirty", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_DIRTY.get().defaultBlockState()));
+    public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_MUDDY = registerBlock("building/stairs/rk_sandstone_stairs_muddy", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_MUDDY.get().defaultBlockState()));
     // ---- Walls
-    public static final RegistryObject <Block> RED_KEEP_WALL = registerBlock("building/walls/red_keep_wall", ModWallBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_WALL_SMOOTH = registerBlock("building/walls/red_keep_wall_smooth", ModWallBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_WALL_CRACKED = registerBlock("building/walls/red_keep_wall_cracked", ModWallBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_WALL_WEATHERED = registerBlock("building/walls/red_keep_wall_weathered", ModWallBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_WALL_DIRTY = registerBlock("building/walls/red_keep_wall_dirty", ModWallBlock::new);
-    public static final RegistryObject <Block> RED_KEEP_WALL_MUDDY = registerBlock("building/walls/red_keep_wall_muddy", ModWallBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WALL = registerBlock("building/walls/rk_sandstone_wall", ModWallBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WALL_SMOOTH = registerBlock("building/walls/rk_sandstone_wall_smooth", ModWallBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WALL_CRACKED = registerBlock("building/walls/rk_sandstone_wall_cracked", ModWallBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WALL_WEATHERED = registerBlock("building/walls/rk_sandstone_wall_weathered", ModWallBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WALL_DIRTY = registerBlock("building/walls/rk_sandstone_wall_dirty", ModWallBlock::new);
+    public static final RegistryObject <Block> RK_SANDSTONE_WALL_MUDDY = registerBlock("building/walls/rk_sandstone_wall_muddy", ModWallBlock::new);
 
 
     // --- The Sept
@@ -88,6 +89,37 @@ public class ModBlocks {
 
     // - The North
     // -- Winterfell
+    // ---- Blocks
+    public static final RegistryObject <Block> WF_STONE = registerBlock("building/blocks/wf_stone", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_SMOOTH = registerBlock("building/blocks/wf_stone_smooth", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_ORNATE = registerBlock("building/blocks/wf_stone_ornate", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_CARVED = registerBlock("building/blocks/wf_stone_carved", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_CRACKED = registerBlock("building/blocks/wf_stone_cracked", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_WEATHERED = registerBlock("building/blocks/wf_stone_weathered", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_DIRTY = registerBlock("building/blocks/wf_stone_dirty", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_STONE_MUDDY = registerBlock("building/blocks/wf_stone_muddy", BuildingBlock::new);
+
+    // ---- Slabs
+    public static final RegistryObject <Block> WF_STONE_SLAB = registerBlock("building/slabs/wf_stone_slab", ModSlabBlock::new);
+    public static final RegistryObject <Block> WF_STONE_SLAB_SMOOTH = registerBlock("building/slabs/wf_stone_slab_smooth", ModSlabBlock::new);
+    public static final RegistryObject <Block> WF_STONE_SLAB_CRACKED = registerBlock("building/slabs/wf_stone_slab_cracked", ModSlabBlock::new);
+    public static final RegistryObject <Block> WF_STONE_SLAB_WEATHERED = registerBlock("building/slabs/wf_stone_slab_weathered", ModSlabBlock::new);
+    public static final RegistryObject <Block> WF_STONE_SLAB_DIRTY = registerBlock("building/slabs/wf_stone_slab_dirty", ModSlabBlock::new);
+    public static final RegistryObject <Block> WF_STONE_SLAB_MUDDY = registerBlock("building/slabs/wf_stone_slab_muddy", ModSlabBlock::new);
+    // ---- Stairs
+    public static final RegistryObject <Block> WF_STONE_STAIRS = registerBlock("building/stairs/wf_stone_stairs", () -> new ModStairBlock (ModBlocks.WF_STONE.get().defaultBlockState()));
+    public static final RegistryObject <Block> WF_STONE_STAIRS_SMOOTH = registerBlock("building/stairs/wf_stone_stairs_smooth", () -> new ModStairBlock(ModBlocks.WF_STONE_SMOOTH.get().defaultBlockState()));
+    public static final RegistryObject <Block> WF_STONE_STAIRS_CRACKED = registerBlock("building/stairs/wf_stone_stairs_cracked", () -> new ModStairBlock(ModBlocks.WF_STONE_CRACKED.get().defaultBlockState()));
+    public static final RegistryObject <Block> WF_STONE_STAIRS_WEATHERED = registerBlock("building/stairs/wf_stone_stairs_weathered", () -> new ModStairBlock(ModBlocks.WF_STONE_WEATHERED.get().defaultBlockState()));
+    public static final RegistryObject <Block> WF_STONE_STAIRS_DIRTY = registerBlock("building/stairs/wf_stone_stairs_dirty", () -> new ModStairBlock(ModBlocks.WF_STONE_DIRTY.get().defaultBlockState()));
+    public static final RegistryObject <Block> WF_STONE_STAIRS_MUDDY = registerBlock("building/stairs/wf_stone_stairs_muddy", () -> new ModStairBlock(ModBlocks.WF_STONE_MUDDY.get().defaultBlockState()));
+    // ---- Walls
+    public static final RegistryObject <Block> WF_STONE_WALL = registerBlock("building/walls/wf_stone_wall", ModWallBlock::new);
+    public static final RegistryObject <Block> WF_STONE_WALL_SMOOTH = registerBlock("building/walls/wf_stone_wall_smooth", ModWallBlock::new);
+    public static final RegistryObject <Block> WF_STONE_WALL_CRACKED = registerBlock("building/walls/wf_stone_wall_cracked", ModWallBlock::new);
+    public static final RegistryObject <Block> WF_STONE_WALL_WEATHERED = registerBlock("building/walls/wf_stone_wall_weathered", ModWallBlock::new);
+    public static final RegistryObject <Block> WF_STONE_WALL_DIRTY = registerBlock("building/walls/wf_stone_wall_dirty", ModWallBlock::new);
+    public static final RegistryObject <Block> WF_STONE_WALL_MUDDY = registerBlock("building/walls/wf_stone_wall_muddy", ModWallBlock::new);
    // public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block", () -> new ModBuildingBlock());
 
     // Structures

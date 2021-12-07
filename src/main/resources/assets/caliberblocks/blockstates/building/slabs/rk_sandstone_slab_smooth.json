@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "caliberblocks:block/building/slabs/rk_sandstone_slab_smooth" },
+    "type=double": {
+      "model": "caliberblocks:block/building/blocks/rk_sandstone_smooth",
+      "type=top": {
+        "model": "caliberblocks:block/building/slabs/rk_sandstone_slab_smooth_top"
+      }
+    }
+  }
+}

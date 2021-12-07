@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "caliberblocks:block/building/blocks/rk_sandstone_smooth"
+  }
+}

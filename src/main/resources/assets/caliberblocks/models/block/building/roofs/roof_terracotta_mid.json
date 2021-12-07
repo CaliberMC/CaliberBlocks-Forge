@@ -1,0 +1,8 @@
+{
+	"credit": "Design by CaliberMC - Charm8er",
+	"parent": "caliberblocks:block/building/roofs/parent/roof_mid",
+	"textures": {
+		"0": "caliberblocks:block/building/roofs/roof_terracotta_mid",
+		"particle": "caliberblocks:block/building/roofs/roof_terracotta_mid"
+	}
+}

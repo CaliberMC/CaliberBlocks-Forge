@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "caliberblocks:block/building/slabs/wf_stone_slab_smooth" },
+    "type=double": {
+      "model": "caliberblocks:block/building/blocks/wf_stone_smooth",
+      "type=top": {
+        "model": "caliberblocks:block/building/slabs/wf_stone_slab_smooth_top"
+      }
+    }
+  }
+}
