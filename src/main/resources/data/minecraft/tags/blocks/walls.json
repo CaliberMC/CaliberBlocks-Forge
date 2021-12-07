@@ -6,6 +6,13 @@
     "caliberblocks:building/walls/rk_sandstone_wall_dirty",
     "caliberblocks:building/walls/rk_sandstone_wall_muddy",
     "caliberblocks:building/walls/rk_sandstone_wall_smooth",
-    "caliberblocks:building/walls/rk_sandstone_wall_weathered"
+    "caliberblocks:building/walls/rk_sandstone_wall_weathered",
+
+    "caliberblocks:building/walls/wf_stone_wall",
+    "caliberblocks:building/walls/wf_stone_wall_cracked",
+    "caliberblocks:building/walls/wf_stone_wall_dirty",
+    "caliberblocks:building/walls/wf_stone_wall_muddy",
+    "caliberblocks:building/walls/wf_stone_wall_smooth",
+    "caliberblocks:building/walls/wf_stone_wall_weathered"
   ]
 }
