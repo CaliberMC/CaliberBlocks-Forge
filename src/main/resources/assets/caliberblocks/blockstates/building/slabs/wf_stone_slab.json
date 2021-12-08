@@ -3,7 +3,7 @@
     "type=bottom": {
       "model": "caliberblocks:block/building/slabs/wf_stone_slab" },
     "type=double": {
-      "model": "caliberblocks:block/building/blocks/wf_stone",
+      "model": "caliberblocks:block/building/blocks/wf_stone_0",
       "type=top": {
         "model": "caliberblocks:block/building/slabs/wf_stone_slab_top"
       }

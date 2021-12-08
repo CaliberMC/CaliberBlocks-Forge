@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side",
   "textures": {
-    "wall": "caliberblocks:block/building/blocks/wf_stone_0"
+    "wall": "caliberblocks:block/building/blocks/wf_stone_mossy_0"
   }
 }

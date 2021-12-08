@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "caliberblocks:block/building/blocks/wf_stone_mossy_0"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/wf_stone_mossy_1"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/wf_stone_mossy_2"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/wf_stone_mossy_3"
+      }
+    ]
+  }
+}

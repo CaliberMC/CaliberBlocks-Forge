@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "caliberblocks:block/building/blocks/wf_stone_cracked_0"
+    "wall": "caliberblocks:block/building/blocks/wf_stone_mossy_0"
   }
 }

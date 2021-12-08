@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "caliberblocks:block/building/blocks/wf_stone_cracked",
-    "top": "caliberblocks:block/building/blocks/wf_stone_cracked",
-    "side": "caliberblocks:block/building/blocks/wf_stone_cracked"
+    "bottom": "caliberblocks:block/building/blocks/wf_stone_cracked_0",
+    "top": "caliberblocks:block/building/blocks/wf_stone_cracked_0",
+    "side": "caliberblocks:block/building/blocks/wf_stone_cracked_0"
   }
 }

@@ -9,7 +9,7 @@ public class ModCreativeTab {
     public static final CreativeModeTab TAB_CALIBER_BLOCKS = new CreativeModeTab("caliber_blocks") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.DRAGON_GLASS_BLOCK.get());
+            return new ItemStack(ModBlocks.RK_SANDSTONE.get());
         }
     };
     public static final CreativeModeTab TAB_CALIBER_DECORATIONS = new CreativeModeTab("caliber_decorations") {

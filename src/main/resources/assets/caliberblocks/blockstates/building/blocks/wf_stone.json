@@ -1,6 +1,12 @@
 {
   "variants": {
-    "": { "model": "caliberblocks:block/building/blocks/wf_stone" }
-
+    "": [
+      {
+        "model": "caliberblocks:block/building/blocks/wf_stone_0"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/wf_stone_1"
+      }
+    ]
   }
 }

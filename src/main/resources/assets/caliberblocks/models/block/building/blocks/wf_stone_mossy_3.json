@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "caliberblocks:block/building/blocks/wf_stone_mossy_3"
+  }
+}
