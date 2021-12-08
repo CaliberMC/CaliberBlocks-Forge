@@ -1,6 +1,21 @@
 {
   "variants": {
-    "": { "model": "caliberblocks:block/building/blocks/kl_cobblestone" }
-
+    "": [
+      {
+        "model": "caliberblocks:block/building/blocks/kl_cobblestone_0"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/kl_cobblestone_1"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/kl_cobblestone_2"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/kl_cobblestone_3"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/kl_cobblestone_4"
+      }
+    ]
   }
 }

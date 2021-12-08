@@ -7,8 +7,6 @@
 
   "block.caliberblocks.building.roofs.roof_terracotta_mid": "Terracotta Roof Mid",
 
-  "block.caliberblocks.building.blocks.kl_cobblestone": "KL Cobblestone",
-
   "block.caliberblocks.building.blocks.rk_sandstone": "RK Sandstone",
   "block.caliberblocks.building.blocks.rk_sandstone_smooth": "RK Sandstone Smooth",
   "block.caliberblocks.building.blocks.rk_sandstone_ornate": "RK Sandstone Ornate",
@@ -17,6 +15,9 @@
   "block.caliberblocks.building.blocks.rk_sandstone_weathered": "RK Sandstone Weathered",
   "block.caliberblocks.building.blocks.rk_sandstone_dirty": "RK Sandstone Dirty",
   "block.caliberblocks.building.blocks.rk_sandstone_muddy": "RK Sandstone Muddy",
+
+  "block.caliberblocks.building.blocks.kl_cobblestone": "KL Cobblestone",
+  "block.caliberblocks.building.blocks.kl_cobblestone_dark": "KL Cobblestone Dark",
 
   "block.caliberblocks.building.slabs.rk_sandstone_slab": "RK Sandstone Slab",
   "block.caliberblocks.building.slabs.rk_sandstone_slab_smooth": "RK Sandstone Slab Smooth",
@@ -51,6 +52,9 @@
   "block.caliberblocks.building.blocks.wf_stone_cracked": "WF Stone Cracked",
   "block.caliberblocks.building.blocks.wf_stone_dirty": "WF Stone Dirty",
   "block.caliberblocks.building.blocks.wf_stone_muddy": "WF Stone Muddy",
+
+  "block.caliberblocks.building.blocks.wf_cobblestone": "WF Cobblestone",
+  "block.caliberblocks.building.blocks.wf_cobblestone_dark": "WF Cobblestone Dark",
 
   "block.caliberblocks.building.slabs.wf_stone_slab": "WF Stone Slab",
   "block.caliberblocks.building.slabs.wf_stone_slab_mossy": "WF Stone Slab Mossy",

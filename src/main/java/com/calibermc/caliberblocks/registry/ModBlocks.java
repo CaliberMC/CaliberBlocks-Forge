@@ -46,7 +46,7 @@ public class ModBlocks {
     // - Crownlands
     // -- Kings Landing
     // --- Roads
-    public static final RegistryObject <Block> KL_COBBLESTONE = registerBlock("building/blocks/kl_cobblestone", BuildingBlock::new);
+
     // --- Red Keep
     // ---- Blocks
     public static final RegistryObject <Block> RK_SANDSTONE = registerBlock("building/blocks/rk_sandstone", BuildingBlock::new);
@@ -57,7 +57,8 @@ public class ModBlocks {
     public static final RegistryObject <Block> RK_SANDSTONE_WEATHERED = registerBlock("building/blocks/rk_sandstone_weathered", BuildingBlock::new);
     public static final RegistryObject <Block> RK_SANDSTONE_DIRTY = registerBlock("building/blocks/rk_sandstone_dirty", BuildingBlock::new);
     public static final RegistryObject <Block> RK_SANDSTONE_MUDDY = registerBlock("building/blocks/rk_sandstone_muddy", BuildingBlock::new);
-
+    public static final RegistryObject <Block> KL_COBBLESTONE = registerBlock("building/blocks/kl_cobblestone", BuildingBlock::new);
+    public static final RegistryObject <Block> KL_COBBLESTONE_DARK = registerBlock("building/blocks/kl_cobblestone_dark", BuildingBlock::new);
     // ---- Slabs
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB = registerBlock("building/slabs/rk_sandstone_slab", ModSlabBlock::new);
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB_SMOOTH = registerBlock("building/slabs/rk_sandstone_slab_smooth", ModSlabBlock::new);
@@ -96,6 +97,9 @@ public class ModBlocks {
     public static final RegistryObject <Block> WF_STONE_CRACKED = registerBlock("building/blocks/wf_stone_cracked", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_DIRTY = registerBlock("building/blocks/wf_stone_dirty", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_MUDDY = registerBlock("building/blocks/wf_stone_muddy", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_COBBLESTONE = registerBlock("building/blocks/wf_cobblestone", BuildingBlock::new);
+    public static final RegistryObject <Block> WF_COBBLESTONE_DARK = registerBlock("building/blocks/wf_cobblestone_dark", BuildingBlock::new);
+
     // ---- Slabs
     public static final RegistryObject <Block> WF_STONE_SLAB = registerBlock("building/slabs/wf_stone_slab", ModSlabBlock::new);
     public static final RegistryObject <Block> WF_STONE_SLAB_MOSSY = registerBlock("building/slabs/wf_stone_slab_mossy", ModSlabBlock::new);
@@ -114,7 +118,6 @@ public class ModBlocks {
     public static final RegistryObject <Block> WF_STONE_WALL_CRACKED = registerBlock("building/walls/wf_stone_wall_cracked", ModWallBlock::new);
     public static final RegistryObject <Block> WF_STONE_WALL_DIRTY = registerBlock("building/walls/wf_stone_wall_dirty", ModWallBlock::new);
     public static final RegistryObject <Block> WF_STONE_WALL_MUDDY = registerBlock("building/walls/wf_stone_wall_muddy", ModWallBlock::new);
-   // public static final RegistryObject <Block> WINTERFELL_BLOCK = registerBlock("winterfell_block", () -> new ModBuildingBlock());
 
     // Structures
     public static final RegistryObject <Block> PILLAR_BASE_MD = registerBlock("structures/pillar_base_md", PillarBaseMd::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);
