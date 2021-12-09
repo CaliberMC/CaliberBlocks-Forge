@@ -9,7 +9,7 @@ public class ModRenderLayers {
     public static void Layers() {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_DOOR_LG.get(), RenderType.cutout());
 
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOF_TERRACOTTA_MID.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_ARROW_SLIT.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PILLAR_BASE_MD.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PILLAR_CENTER_MD.get(), RenderType.cutout());

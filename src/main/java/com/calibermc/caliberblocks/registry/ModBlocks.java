@@ -5,7 +5,6 @@ import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelHorizontal;
 import com.calibermc.caliberblocks.custom.blocks.barrels.BarrelVertical;
 import com.calibermc.caliberblocks.custom.blocks.building.blocks.*;
 import com.calibermc.caliberblocks.custom.blocks.building.doors.ModDoorBlock;
-import com.calibermc.caliberblocks.custom.blocks.building.roofs.RoofMidClay;
 import com.calibermc.caliberblocks.custom.blocks.furniture.chairs.ChairTall;
 import com.calibermc.caliberblocks.custom.blocks.furniture.tables.PartnerDesk;
 import com.calibermc.caliberblocks.custom.blocks.furniture.tables.Table;
@@ -39,9 +38,6 @@ public class ModBlocks {
     // -- Doors
     public static final RegistryObject <Block> OAK_DOOR_LG = registerBlock("building/blocks/oak_door_lg", ModDoorBlock::new);
 
-    // -- Roofs
-    public static final RegistryObject <Block> ROOF_TERRACOTTA_MID = registerBlock("building/roofs/roof_terracotta_mid", RoofMidClay::new);
-
     // REGION SPECIFIC BLOCKS
     // - Crownlands
     // -- Kings Landing
@@ -59,6 +55,8 @@ public class ModBlocks {
     public static final RegistryObject <Block> RK_SANDSTONE_MUDDY = registerBlock("building/blocks/rk_sandstone_muddy", BuildingBlock::new);
     public static final RegistryObject <Block> KL_COBBLESTONE = registerBlock("building/blocks/kl_cobblestone", BuildingBlock::new);
     public static final RegistryObject <Block> KL_COBBLESTONE_DARK = registerBlock("building/blocks/kl_cobblestone_dark", BuildingBlock::new);
+
+
     // ---- Slabs
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB = registerBlock("building/slabs/rk_sandstone_slab", ModSlabBlock::new);
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB_SMOOTH = registerBlock("building/slabs/rk_sandstone_slab_smooth", ModSlabBlock::new);
@@ -99,6 +97,8 @@ public class ModBlocks {
     public static final RegistryObject <Block> WF_STONE_MUDDY = registerBlock("building/blocks/wf_stone_muddy", BuildingBlock::new);
     public static final RegistryObject <Block> WF_COBBLESTONE = registerBlock("building/blocks/wf_cobblestone", BuildingBlock::new);
     public static final RegistryObject <Block> WF_COBBLESTONE_DARK = registerBlock("building/blocks/wf_cobblestone_dark", BuildingBlock::new);
+
+    public static final RegistryObject <Block> WF_ARROW_SLIT = registerBlock("building/blocks/wf_arrow_slit", ArrowSlit::new);
 
     // ---- Slabs
     public static final RegistryObject <Block> WF_STONE_SLAB = registerBlock("building/slabs/wf_stone_slab", ModSlabBlock::new);
