@@ -9,6 +9,13 @@ public class ModRenderLayers {
     public static void Layers() {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_DOOR_LG.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_WINDOW.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_WINDOW.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAK_WINDOW.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_WINDOW.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_WINDOW.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_WINDOW.get(), RenderType.cutout());
+
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_ARROW_SLIT.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PILLAR_BASE_MD.get(), RenderType.cutout());

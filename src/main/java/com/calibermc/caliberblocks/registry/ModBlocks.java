@@ -38,6 +38,14 @@ public class ModBlocks {
     // -- Doors
     public static final RegistryObject <Block> OAK_DOOR_LG = registerBlock("building/blocks/oak_door_lg", ModDoorBlock::new);
 
+    // -- Windows
+    public static final RegistryObject <Block> ACACIA_WINDOW = registerBlock("building/windows/acacia_window", ArrowSlit::new);
+    public static final RegistryObject <Block> BIRCH_WINDOW = registerBlock("building/windows/birch_window", ArrowSlit::new);
+    public static final RegistryObject <Block> DARK_OAK_WINDOW = registerBlock("building/windows/dark_oak_window", ArrowSlit::new);
+    public static final RegistryObject <Block> JUNGLE_WINDOW = registerBlock("building/windows/jungle_window", ArrowSlit::new);
+    public static final RegistryObject <Block> OAK_WINDOW = registerBlock("building/windows/oak_window", ArrowSlit::new);
+    public static final RegistryObject <Block> SPRUCE_WINDOW = registerBlock("building/windows/spruce_window", ArrowSlit::new);
+
     // REGION SPECIFIC BLOCKS
     // - Crownlands
     // -- Kings Landing

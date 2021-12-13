@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures":
+  {
+    "particle": "caliberblocks:block/building/windows/birch_window",
+    "up": "caliberblocks:block/ts",
+    "down": "caliberblocks:block/ts",
+    "north": "caliberblocks:block/building/windows/birch_window",
+    "south": "caliberblocks:block/building/windows/birch_window",
+    "east": "caliberblocks:block/ts",
+    "west": "caliberblocks:block/ts"
+  }
+}

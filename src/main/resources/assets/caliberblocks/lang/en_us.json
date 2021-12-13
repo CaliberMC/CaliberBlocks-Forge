@@ -5,6 +5,13 @@
   "item.caliberblocks.dragon_glass": "Dragon Glass",
   "block.caliberblocks.environment.dragon_glass_block": "Dragon Glass Block",
 
+  "block.caliberblocks.building.windows.acacia_window": "Acacia Window",
+  "block.caliberblocks.building.windows.birch_window": "Birch Window",
+  "block.caliberblocks.building.windows.dark_oak_window": "Dark Oak Window",
+  "block.caliberblocks.building.windows.jungle_window": "Jungle Window",
+  "block.caliberblocks.building.windows.oak_window": "Oak Window",
+  "block.caliberblocks.building.windows.spruce_window": "Spruce Window",
+
   "block.caliberblocks.building.roofs.roof_terracotta_mid": "Terracotta Roof Mid",
 
   "block.caliberblocks.building.blocks.rk_sandstone": "RK Sandstone",
