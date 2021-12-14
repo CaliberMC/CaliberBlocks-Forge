@@ -9,12 +9,6 @@
       },
       {
         "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark_2"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark_3"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark_4"
       }
     ]
   }

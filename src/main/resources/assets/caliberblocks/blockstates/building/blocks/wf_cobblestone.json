@@ -9,12 +9,6 @@
       },
       {
         "model": "caliberblocks:block/building/blocks/wf_cobblestone_2"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/wf_cobblestone_3"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/wf_cobblestone_4"
       }
     ]
   }
