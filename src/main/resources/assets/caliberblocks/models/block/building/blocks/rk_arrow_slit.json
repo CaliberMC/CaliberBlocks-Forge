@@ -2,12 +2,12 @@
   "parent": "block/cube",
   "textures":
   {
-    "particle": "caliberblocks:block/building/blocks/rk_sandstone_0",
-    "up": "caliberblocks:block/building/blocks/rk_sandstone_0",
-    "down": "caliberblocks:block/building/blocks/rk_sandstone_0",
+    "particle": "caliberblocks:block/building/blocks/rk_sandstone",
+    "up": "caliberblocks:block/ts",
+    "down": "caliberblocks:block/ts",
     "north": "caliberblocks:block/building/blocks/rk_arrow_slit",
     "south": "caliberblocks:block/building/blocks/rk_arrow_slit",
-    "east": "caliberblocks:block/building/blocks/rk_sandstone_0",
-    "west": "caliberblocks:block/building/blocks/rk_sandstone_0"
+    "east": "caliberblocks:block/building/blocks/rk_sandstone",
+    "west": "caliberblocks:block/building/blocks/rk_sandstone"
   }
 }

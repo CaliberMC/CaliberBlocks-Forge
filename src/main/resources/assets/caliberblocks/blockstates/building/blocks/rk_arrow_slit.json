@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "caliberblocks:block/building/blocks/kl_arrow_slit",
+      "model": "caliberblocks:block/building/blocks/rk_arrow_slit",
       "y": 90
     },
     "facing=north": {
-      "model": "caliberblocks:block/building/blocks/kl_arrow_slit"
+      "model": "caliberblocks:block/building/blocks/rk_arrow_slit"
     },
     "facing=south": {
-      "model": "caliberblocks:block/building/blocks/kl_arrow_slit",
+      "model": "caliberblocks:block/building/blocks/rk_arrow_slit",
       "y": 180
     },
     "facing=west": {
-      "model": "caliberblocks:block/building/blocks/kl_arrow_slit",
+      "model": "caliberblocks:block/building/blocks/rk_arrow_slit",
       "y": 270
     }
   }

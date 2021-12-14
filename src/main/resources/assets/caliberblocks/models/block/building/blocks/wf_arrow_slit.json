@@ -3,8 +3,8 @@
   "textures":
   {
     "particle": "caliberblocks:block/building/blocks/wf_stone_0",
-    "up": "caliberblocks:block/building/blocks/wf_stone_0",
-    "down": "caliberblocks:block/building/blocks/wf_stone_0",
+    "up": "caliberblocks:block/ts",
+    "down": "caliberblocks:block/ts",
     "north": "caliberblocks:block/building/blocks/wf_arrow_slit",
     "south": "caliberblocks:block/building/blocks/wf_arrow_slit",
     "east": "caliberblocks:block/building/blocks/wf_stone_0",
