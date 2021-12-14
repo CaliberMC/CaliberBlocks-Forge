@@ -22,6 +22,7 @@ public class ModRenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_WINDOW.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_ARROW_SLIT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RK_ARROW_SLIT.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PILLAR_BASE_MD.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PILLAR_CENTER_MD.get(), RenderType.cutout());

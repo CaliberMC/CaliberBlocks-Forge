@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures":
+  {
+    "particle": "caliberblocks:block/building/blocks/rk_sandstone_0",
+    "up": "caliberblocks:block/building/blocks/rk_sandstone_0",
+    "down": "caliberblocks:block/building/blocks/rk_sandstone_0",
+    "north": "caliberblocks:block/building/blocks/rk_arrow_slit",
+    "south": "caliberblocks:block/building/blocks/rk_arrow_slit",
+    "east": "caliberblocks:block/building/blocks/rk_sandstone_0",
+    "west": "caliberblocks:block/building/blocks/rk_sandstone_0"
+  }
+}

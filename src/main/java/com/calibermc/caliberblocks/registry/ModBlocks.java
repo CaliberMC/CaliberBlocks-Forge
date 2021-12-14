@@ -66,6 +66,8 @@ public class ModBlocks {
     public static final RegistryObject <Block> KL_COBBLESTONE = registerBlock("building/blocks/kl_cobblestone", BuildingBlock::new);
     public static final RegistryObject <Block> KL_COBBLESTONE_DARK = registerBlock("building/blocks/kl_cobblestone_dark", BuildingBlock::new);
 
+    public static final RegistryObject <Block> RK_ARROW_SLIT = registerBlock("building/blocks/rk_arrow_slit", ArrowSlit::new);
+
     // ---- Slabs
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB = registerBlock("building/slabs/rk_sandstone_slab", ModSlabBlock::new);
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB_SMOOTH = registerBlock("building/slabs/rk_sandstone_slab_smooth", ModSlabBlock::new);
