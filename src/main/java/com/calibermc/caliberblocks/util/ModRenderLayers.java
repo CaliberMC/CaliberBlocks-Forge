@@ -9,6 +9,11 @@ public class ModRenderLayers {
     public static void Layers() {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_DOOR_LG.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.KL_COBBLESTONE_DARK_PATH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.KL_COBBLESTONE_PATH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_COBBLESTONE_DARK_PATH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_COBBLESTONE_PATH.get(), RenderType.cutout());
+
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_WINDOW.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_WINDOW.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAK_WINDOW.get(), RenderType.cutout());

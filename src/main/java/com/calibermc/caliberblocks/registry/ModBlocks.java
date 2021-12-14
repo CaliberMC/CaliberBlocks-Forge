@@ -50,6 +50,8 @@ public class ModBlocks {
     // - Crownlands
     // -- Kings Landing
     // --- Roads
+    public static final RegistryObject <Block> KL_COBBLESTONE_PATH = registerBlock("building/blocks/kl_cobblestone_path", CobblestonePath::new);
+    public static final RegistryObject <Block> KL_COBBLESTONE_DARK_PATH = registerBlock("building/blocks/kl_cobblestone_path_dark", CobblestonePath::new);
 
     // --- Red Keep
     // ---- Blocks
@@ -63,7 +65,6 @@ public class ModBlocks {
     public static final RegistryObject <Block> RK_SANDSTONE_MUDDY = registerBlock("building/blocks/rk_sandstone_muddy", BuildingBlock::new);
     public static final RegistryObject <Block> KL_COBBLESTONE = registerBlock("building/blocks/kl_cobblestone", BuildingBlock::new);
     public static final RegistryObject <Block> KL_COBBLESTONE_DARK = registerBlock("building/blocks/kl_cobblestone_dark", BuildingBlock::new);
-
 
     // ---- Slabs
     public static final RegistryObject <Block> RK_SANDSTONE_SLAB = registerBlock("building/slabs/rk_sandstone_slab", ModSlabBlock::new);
@@ -96,6 +97,10 @@ public class ModBlocks {
 
     // - The North
     // -- Winterfell
+
+    // --- Roads
+    public static final RegistryObject <Block> WF_COBBLESTONE_PATH = registerBlock("building/blocks/wf_cobblestone_path", CobblestonePath::new);
+    public static final RegistryObject <Block> WF_COBBLESTONE_DARK_PATH = registerBlock("building/blocks/wf_cobblestone_path_dark", CobblestonePath::new);
     // ---- Blocks
     public static final RegistryObject <Block> WF_STONE = registerBlock("building/blocks/wf_stone", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_MOSSY = registerBlock("building/blocks/wf_stone_mossy", BuildingBlock::new);
