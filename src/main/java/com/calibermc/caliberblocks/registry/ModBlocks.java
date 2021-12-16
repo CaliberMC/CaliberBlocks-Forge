@@ -101,17 +101,17 @@ public class ModBlocks {
     // -- Winterfell
 
     // --- Roads
-    public static final RegistryObject <Block> WF_COBBLESTONE_PATH = registerBlock("building/blocks/wf_cobblestone_path", CobblestonePath::new);
-    public static final RegistryObject <Block> WF_COBBLESTONE_DARK_PATH = registerBlock("building/blocks/wf_cobblestone_path_dark", CobblestonePath::new);
+    public static final RegistryObject <Block> COBBLESTONE_PATH = registerBlock("building/blocks/cobblestone_path", CobblestonePath::new);
+    public static final RegistryObject <Block> COBBLESTONE_DARK_PATH = registerBlock("building/blocks/cobblestone_path_dark", CobblestonePath::new);
     // ---- Blocks
+
     public static final RegistryObject <Block> WF_STONE = registerBlock("building/blocks/wf_stone", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_MOSSY = registerBlock("building/blocks/wf_stone_mossy", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_CARVED = registerBlock("building/blocks/wf_stone_carved", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_CRACKED = registerBlock("building/blocks/wf_stone_cracked", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_DIRTY = registerBlock("building/blocks/wf_stone_dirty", BuildingBlock::new);
     public static final RegistryObject <Block> WF_STONE_MUDDY = registerBlock("building/blocks/wf_stone_muddy", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_COBBLESTONE = registerBlock("building/blocks/wf_cobblestone", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_COBBLESTONE_DARK = registerBlock("building/blocks/wf_cobblestone_dark", BuildingBlock::new);
+    public static final RegistryObject <Block> COBBLESTONE_DARK = registerBlock("building/blocks/cobblestone_dark", BuildingBlock::new);
 
     public static final RegistryObject <Block> WF_ARROW_SLIT = registerBlock("building/blocks/wf_arrow_slit", ArrowSlit::new);
 

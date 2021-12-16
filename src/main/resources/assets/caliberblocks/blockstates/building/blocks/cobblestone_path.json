@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "caliberblocks:block/building/blocks/cobblestone_path"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/cobblestone_path"
+      },
+      {
+        "model": "caliberblocks:block/building/blocks/cobblestone_path"
+      }
+    ]
+  }
+}

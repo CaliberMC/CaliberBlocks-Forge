@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "caliberblocks:block/building/blocks/cobblestone_dark"
+      }
+    ]
+  }
+}

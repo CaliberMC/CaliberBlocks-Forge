@@ -1,9 +1,9 @@
 { "parent": "block/block",
   "textures": {
-    "particle": "caliberblocks:block/building/blocks/wf_cobblestone_path_dark_0",
-    "top": "caliberblocks:block/building/blocks/wf_cobblestone_path_dark_0",
-    "side": "caliberblocks:block/building/blocks/wf_cobblestone_path_dark_0",
-    "bottom": "caliberblocks:block/building/blocks/wf_cobblestone_path_dark_0"
+    "particle": "caliberblocks:block/building/blocks/cobblestone_path",
+    "top": "caliberblocks:block/building/blocks/cobblestone_path",
+    "side": "caliberblocks:block/building/blocks/cobblestone_path",
+    "bottom": "caliberblocks:block/building/blocks/cobblestone_path"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],

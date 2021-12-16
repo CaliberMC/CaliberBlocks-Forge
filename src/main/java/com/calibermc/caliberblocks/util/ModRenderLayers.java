@@ -11,8 +11,8 @@ public class ModRenderLayers {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.KL_COBBLESTONE_DARK_PATH.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.KL_COBBLESTONE_PATH.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_COBBLESTONE_DARK_PATH.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WF_COBBLESTONE_PATH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.COBBLESTONE_DARK_PATH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.COBBLESTONE_PATH.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_WINDOW.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_WINDOW.get(), RenderType.cutout());
