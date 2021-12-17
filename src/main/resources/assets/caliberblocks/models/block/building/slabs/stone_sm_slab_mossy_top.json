@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "caliberblocks:block/building/blocks/stone_sm_mossy",
+    "top": "caliberblocks:block/building/blocks/stone_sm_mossy",
+    "side": "caliberblocks:block/building/blocks/stone_sm_mossy"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "caliberblocks:block/building/blocks/wf_stone_mossy_0",
-    "top": "caliberblocks:block/building/blocks/wf_stone_mossy_0",
-    "side": "caliberblocks:block/building/blocks/wf_stone_mossy_0"
-  }
-}

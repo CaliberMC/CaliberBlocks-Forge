@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "caliberblocks:block/building/slabs/stone_sm_slab_muddy" },
+    "type=double": {
+      "model": "caliberblocks:block/building/blocks/stone_sm_muddy",
+      "type=top": {
+        "model": "caliberblocks:block/building/slabs/stone_sm_slab_muddy_top"
+      }
+    }
+  }
+}

@@ -35,6 +35,40 @@ public class ModBlocks {
 
     // UNIVERSAL BLOCKS
     // - Building
+    // -- Roads
+    public static final RegistryObject <Block> COBBLESTONE_PATH = registerBlock("building/blocks/cobblestone_path", CobblestonePath::new);
+    public static final RegistryObject <Block> COBBLESTONE_DARK_PATH = registerBlock("building/blocks/cobblestone_path_dark", CobblestonePath::new);
+    // -- Blocks
+
+    public static final RegistryObject <Block> STONE_SM = registerBlock("building/blocks/stone_sm", BuildingBlock::new);
+    public static final RegistryObject <Block> STONE_SM_MOSSY = registerBlock("building/blocks/stone_sm_mossy", BuildingBlock::new);
+    public static final RegistryObject <Block> STONE_SM_CARVED = registerBlock("building/blocks/stone_sm_carved", BuildingBlock::new);
+    public static final RegistryObject <Block> STONE_SM_CRACKED = registerBlock("building/blocks/stone_sm_cracked", BuildingBlock::new);
+    public static final RegistryObject <Block> STONE_SM_DIRTY = registerBlock("building/blocks/stone_sm_dirty", BuildingBlock::new);
+    public static final RegistryObject <Block> STONE_SM_MUDDY = registerBlock("building/blocks/stone_sm_muddy", BuildingBlock::new);
+    public static final RegistryObject <Block> COBBLESTONE_DARK = registerBlock("building/blocks/cobblestone_dark", BuildingBlock::new);
+
+    public static final RegistryObject <Block> STONE_SM_ARROW_SLIT = registerBlock("building/blocks/stone_sm_arrow_slit", ArrowSlit::new);
+
+    // -- Slabs
+    public static final RegistryObject <Block> STONE_SM_SLAB = registerBlock("building/slabs/stone_sm_slab", ModSlabBlock::new);
+    public static final RegistryObject <Block> STONE_SM_SLAB_MOSSY = registerBlock("building/slabs/stone_sm_slab_mossy", ModSlabBlock::new);
+    public static final RegistryObject <Block> STONE_SM_SLAB_CRACKED = registerBlock("building/slabs/stone_sm_slab_cracked", ModSlabBlock::new);
+    public static final RegistryObject <Block> STONE_SM_SLAB_DIRTY = registerBlock("building/slabs/stone_sm_slab_dirty", ModSlabBlock::new);
+    public static final RegistryObject <Block> STONE_SM_SLAB_MUDDY = registerBlock("building/slabs/stone_sm_slab_muddy", ModSlabBlock::new);
+    // -- Stairs
+    public static final RegistryObject <Block> STONE_SM_STAIRS = registerBlock("building/stairs/stone_sm_stairs", () -> new ModStairBlock (ModBlocks.STONE_SM.get().defaultBlockState()));
+    public static final RegistryObject <Block> STONE_SM_STAIRS_MOSSY = registerBlock("building/stairs/stone_sm_stairs_mossy", () -> new ModStairBlock(ModBlocks.STONE_SM_MOSSY.get().defaultBlockState()));
+    public static final RegistryObject <Block> STONE_SM_STAIRS_CRACKED = registerBlock("building/stairs/stone_small_stairs_cracked", () -> new ModStairBlock(ModBlocks.STONE_SM_CRACKED.get().defaultBlockState()));
+    public static final RegistryObject <Block> STONE_SM_STAIRS_DIRTY = registerBlock("building/stairs/stone_sm_stairs_dirty", () -> new ModStairBlock(ModBlocks.STONE_SM_DIRTY.get().defaultBlockState()));
+    public static final RegistryObject <Block> STONE_SM_STAIRS_MUDDY = registerBlock("building/stairs/stone_sm_stairs_muddy", () -> new ModStairBlock(ModBlocks.STONE_SM_MUDDY.get().defaultBlockState()));
+    // -- Walls
+    public static final RegistryObject <Block> STONE_SM_WALL = registerBlock("building/walls/stone_sm_wall", ModWallBlock::new);
+    public static final RegistryObject <Block> STONE_SM_WALL_MOSSY = registerBlock("building/walls/stone_sm_wall_mossy", ModWallBlock::new);
+    public static final RegistryObject <Block> STONE_SM_WALL_CRACKED = registerBlock("building/walls/stone_sm_wall_cracked", ModWallBlock::new);
+    public static final RegistryObject <Block> STONE_SM_WALL_DIRTY = registerBlock("building/walls/stone_sm_wall_dirty", ModWallBlock::new);
+    public static final RegistryObject <Block> STONE_SM_WALL_MUDDY = registerBlock("building/walls/stone_sm_wall_muddy", ModWallBlock::new);
+
     // -- Doors
     public static final RegistryObject <Block> OAK_DOOR_LG = registerBlock("building/blocks/oak_door_lg", ModDoorBlock::new);
 
@@ -100,39 +134,7 @@ public class ModBlocks {
     // - The North
     // -- Winterfell
 
-    // --- Roads
-    public static final RegistryObject <Block> COBBLESTONE_PATH = registerBlock("building/blocks/cobblestone_path", CobblestonePath::new);
-    public static final RegistryObject <Block> COBBLESTONE_DARK_PATH = registerBlock("building/blocks/cobblestone_path_dark", CobblestonePath::new);
-    // ---- Blocks
 
-    public static final RegistryObject <Block> WF_STONE = registerBlock("building/blocks/wf_stone", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_STONE_MOSSY = registerBlock("building/blocks/wf_stone_mossy", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_STONE_CARVED = registerBlock("building/blocks/wf_stone_carved", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_STONE_CRACKED = registerBlock("building/blocks/wf_stone_cracked", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_STONE_DIRTY = registerBlock("building/blocks/wf_stone_dirty", BuildingBlock::new);
-    public static final RegistryObject <Block> WF_STONE_MUDDY = registerBlock("building/blocks/wf_stone_muddy", BuildingBlock::new);
-    public static final RegistryObject <Block> COBBLESTONE_DARK = registerBlock("building/blocks/cobblestone_dark", BuildingBlock::new);
-
-    public static final RegistryObject <Block> WF_ARROW_SLIT = registerBlock("building/blocks/wf_arrow_slit", ArrowSlit::new);
-
-    // ---- Slabs
-    public static final RegistryObject <Block> WF_STONE_SLAB = registerBlock("building/slabs/wf_stone_slab", ModSlabBlock::new);
-    public static final RegistryObject <Block> WF_STONE_SLAB_MOSSY = registerBlock("building/slabs/wf_stone_slab_mossy", ModSlabBlock::new);
-    public static final RegistryObject <Block> WF_STONE_SLAB_CRACKED = registerBlock("building/slabs/wf_stone_slab_cracked", ModSlabBlock::new);
-    public static final RegistryObject <Block> WF_STONE_SLAB_DIRTY = registerBlock("building/slabs/wf_stone_slab_dirty", ModSlabBlock::new);
-    public static final RegistryObject <Block> WF_STONE_SLAB_MUDDY = registerBlock("building/slabs/wf_stone_slab_muddy", ModSlabBlock::new);
-    // ---- Stairs
-    public static final RegistryObject <Block> WF_STONE_STAIRS = registerBlock("building/stairs/wf_stone_stairs", () -> new ModStairBlock (ModBlocks.WF_STONE.get().defaultBlockState()));
-    public static final RegistryObject <Block> WF_STONE_STAIRS_MOSSY = registerBlock("building/stairs/wf_stone_stairs_mossy", () -> new ModStairBlock(ModBlocks.WF_STONE_MOSSY.get().defaultBlockState()));
-    public static final RegistryObject <Block> WF_STONE_STAIRS_CRACKED = registerBlock("building/stairs/wf_stone_stairs_cracked", () -> new ModStairBlock(ModBlocks.WF_STONE_CRACKED.get().defaultBlockState()));
-    public static final RegistryObject <Block> WF_STONE_STAIRS_DIRTY = registerBlock("building/stairs/wf_stone_stairs_dirty", () -> new ModStairBlock(ModBlocks.WF_STONE_DIRTY.get().defaultBlockState()));
-    public static final RegistryObject <Block> WF_STONE_STAIRS_MUDDY = registerBlock("building/stairs/wf_stone_stairs_muddy", () -> new ModStairBlock(ModBlocks.WF_STONE_MUDDY.get().defaultBlockState()));
-    // ---- Walls
-    public static final RegistryObject <Block> WF_STONE_WALL = registerBlock("building/walls/wf_stone_wall", ModWallBlock::new);
-    public static final RegistryObject <Block> WF_STONE_WALL_MOSSY = registerBlock("building/walls/wf_stone_wall_mossy", ModWallBlock::new);
-    public static final RegistryObject <Block> WF_STONE_WALL_CRACKED = registerBlock("building/walls/wf_stone_wall_cracked", ModWallBlock::new);
-    public static final RegistryObject <Block> WF_STONE_WALL_DIRTY = registerBlock("building/walls/wf_stone_wall_dirty", ModWallBlock::new);
-    public static final RegistryObject <Block> WF_STONE_WALL_MUDDY = registerBlock("building/walls/wf_stone_wall_muddy", ModWallBlock::new);
 
     // Structures
     public static final RegistryObject <Block> PILLAR_BASE_MD = registerBlock("structures/pillar_base_md", PillarBaseMd::new, ModCreativeTab.TAB_CALIBER_DECORATIONS);

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "caliberblocks:block/building/slabs/stone_sm_slab" },
+    "type=double": {
+      "model": "caliberblocks:block/building/blocks/stone_sm",
+      "type=top": {
+        "model": "caliberblocks:block/building/slabs/stone_sm_slab_top"
+      }
+    }
+  }
+}

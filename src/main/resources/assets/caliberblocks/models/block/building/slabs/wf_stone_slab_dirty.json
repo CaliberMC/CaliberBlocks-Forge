@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "caliberblocks:block/building/blocks/wf_stone_dirty",
-    "top": "caliberblocks:block/building/blocks/wf_stone_dirty",
-    "side": "caliberblocks:block/building/blocks/wf_stone_dirty"
-  }
-}
