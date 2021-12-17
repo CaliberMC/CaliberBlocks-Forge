@@ -2,13 +2,7 @@
   "variants": {
     "": [
       {
-        "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark_0"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark_1"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark_2"
+        "model": "caliberblocks:block/building/blocks/kl_cobblestone_dark"
       }
     ]
   }
