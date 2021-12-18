@@ -10,7 +10,7 @@ import net.minecraft.world.level.material.Material;
 
 public class ModStairBlock extends StairBlock {
 
-    /**Custom building blocks**/
+    /**Custom stair blocks**/
 
     public ModStairBlock(BlockState baseBlockState) {
         super(baseBlockState, Properties.of(Material.STONE)

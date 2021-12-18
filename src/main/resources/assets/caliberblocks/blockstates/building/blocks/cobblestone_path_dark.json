@@ -3,12 +3,6 @@
     "": [
       {
         "model": "caliberblocks:block/building/blocks/cobblestone_path_dark"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/cobblestone_path_dark"
-      },
-      {
-        "model": "caliberblocks:block/building/blocks/cobblestone_path_dark"
       }
     ]
   }

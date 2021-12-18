@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "caliberblocks:building/walls/cobblestone_wall_dark",
+
     "caliberblocks:building/walls/rk_sandstone_wall",
     "caliberblocks:building/walls/rk_sandstone_wall_cracked",
     "caliberblocks:building/walls/rk_sandstone_wall_dirty",

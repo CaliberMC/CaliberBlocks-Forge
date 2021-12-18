@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "caliberblocks:block/building/slabs/cobblestone_slab_dark" },
+    "type=double": {
+      "model": "caliberblocks:block/building/blocks/cobblestone_dark",
+      "type=top": {
+        "model": "caliberblocks:block/building/slabs/cobblestone_slab_dark_top"
+      }
+    }
+  }
+}

@@ -36,8 +36,9 @@ public class ModBlocks {
     // UNIVERSAL BLOCKS
     // - Building
     // -- Roads
-    public static final RegistryObject <Block> COBBLESTONE_PATH = registerBlock("building/blocks/cobblestone_path", CobblestonePath::new);
-    public static final RegistryObject <Block> COBBLESTONE_DARK_PATH = registerBlock("building/blocks/cobblestone_path_dark", CobblestonePath::new);
+    public static final RegistryObject <Block> COBBLESTONE_PATH = registerBlock("building/blocks/cobblestone_path", ModPathBlock::new);
+    public static final RegistryObject <Block> COBBLESTONE_DARK_PATH = registerBlock("building/blocks/cobblestone_path_dark", ModPathBlock::new);
+
     // -- Blocks
 
     public static final RegistryObject <Block> STONE_SM = registerBlock("building/blocks/stone_sm", BuildingBlock::new);
@@ -56,18 +57,22 @@ public class ModBlocks {
     public static final RegistryObject <Block> STONE_SM_SLAB_CRACKED = registerBlock("building/slabs/stone_sm_slab_cracked", ModSlabBlock::new);
     public static final RegistryObject <Block> STONE_SM_SLAB_DIRTY = registerBlock("building/slabs/stone_sm_slab_dirty", ModSlabBlock::new);
     public static final RegistryObject <Block> STONE_SM_SLAB_MUDDY = registerBlock("building/slabs/stone_sm_slab_muddy", ModSlabBlock::new);
+    public static final RegistryObject <Block> COBBLESTONE_SLAB_DARK = registerBlock("building/slabs/cobblestone_slab_dark", ModSlabBlock::new);
     // -- Stairs
     public static final RegistryObject <Block> STONE_SM_STAIRS = registerBlock("building/stairs/stone_sm_stairs", () -> new ModStairBlock (ModBlocks.STONE_SM.get().defaultBlockState()));
     public static final RegistryObject <Block> STONE_SM_STAIRS_MOSSY = registerBlock("building/stairs/stone_sm_stairs_mossy", () -> new ModStairBlock(ModBlocks.STONE_SM_MOSSY.get().defaultBlockState()));
     public static final RegistryObject <Block> STONE_SM_STAIRS_CRACKED = registerBlock("building/stairs/stone_small_stairs_cracked", () -> new ModStairBlock(ModBlocks.STONE_SM_CRACKED.get().defaultBlockState()));
     public static final RegistryObject <Block> STONE_SM_STAIRS_DIRTY = registerBlock("building/stairs/stone_sm_stairs_dirty", () -> new ModStairBlock(ModBlocks.STONE_SM_DIRTY.get().defaultBlockState()));
     public static final RegistryObject <Block> STONE_SM_STAIRS_MUDDY = registerBlock("building/stairs/stone_sm_stairs_muddy", () -> new ModStairBlock(ModBlocks.STONE_SM_MUDDY.get().defaultBlockState()));
+    //public static final RegistryObject <Block> COBBLESTONE_STAIRS_DARK = registerBlock("building/stairs/cobblestone_stairs_dark", () -> new ModStairBlock(ModBlocks.COBBLESTONE_STAIRS_DARK.get().defaultBlockState()));
+
     // -- Walls
     public static final RegistryObject <Block> STONE_SM_WALL = registerBlock("building/walls/stone_sm_wall", ModWallBlock::new);
     public static final RegistryObject <Block> STONE_SM_WALL_MOSSY = registerBlock("building/walls/stone_sm_wall_mossy", ModWallBlock::new);
     public static final RegistryObject <Block> STONE_SM_WALL_CRACKED = registerBlock("building/walls/stone_sm_wall_cracked", ModWallBlock::new);
     public static final RegistryObject <Block> STONE_SM_WALL_DIRTY = registerBlock("building/walls/stone_sm_wall_dirty", ModWallBlock::new);
     public static final RegistryObject <Block> STONE_SM_WALL_MUDDY = registerBlock("building/walls/stone_sm_wall_muddy", ModWallBlock::new);
+    public static final RegistryObject <Block> COBBLESTONE_WALL_DARK = registerBlock("building/walls/cobblestone_wall_dark", ModWallBlock::new);
 
     // -- Doors
     public static final RegistryObject <Block> OAK_DOOR_LG = registerBlock("building/blocks/oak_door_lg", ModDoorBlock::new);
@@ -84,8 +89,8 @@ public class ModBlocks {
     // - Crownlands
     // -- Kings Landing
     // --- Roads
-    public static final RegistryObject <Block> KL_COBBLESTONE_PATH = registerBlock("building/blocks/kl_cobblestone_path", CobblestonePath::new);
-    public static final RegistryObject <Block> KL_COBBLESTONE_DARK_PATH = registerBlock("building/blocks/kl_cobblestone_path_dark", CobblestonePath::new);
+    public static final RegistryObject <Block> KL_COBBLESTONE_PATH = registerBlock("building/blocks/kl_cobblestone_path", ModPathBlock::new);
+    public static final RegistryObject <Block> KL_COBBLESTONE_DARK_PATH = registerBlock("building/blocks/kl_cobblestone_path_dark", ModPathBlock::new);
 
     // --- Red Keep
     // ---- Blocks
