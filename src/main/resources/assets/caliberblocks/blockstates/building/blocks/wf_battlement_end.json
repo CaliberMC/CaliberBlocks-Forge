@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "caliberblocks:block/building/blocks/wf_battlement_end",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "caliberblocks:block/building/blocks/wf_battlement_end"
+    },
+    "facing=south": {
+      "model": "caliberblocks:block/building/blocks/wf_battlement_end",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "caliberblocks:block/building/blocks/wf_battlement_end",
+      "y": 270
+    }
+  }
+}

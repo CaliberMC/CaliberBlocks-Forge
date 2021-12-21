@@ -13,7 +13,13 @@ public class ModRenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.KL_COBBLESTONE_PATH.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.COBBLESTONE_DARK_PATH.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.COBBLESTONE_PATH.get(), RenderType.cutout());
-
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STONE_BATTLEMENT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STONE_BATTLEMENT_CORNER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STONE_BATTLEMENT_END.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STONE_BATTLEMENT_SHORT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STONE_BATTLEMENT_SHORT_CORNER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STONE_BATTLEMENT_SHORT_END.get(), RenderType.cutout());
+        
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_WINDOW.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_WINDOW.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAK_WINDOW.get(), RenderType.cutout());

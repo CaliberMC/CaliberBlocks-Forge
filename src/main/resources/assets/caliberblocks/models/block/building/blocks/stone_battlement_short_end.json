@@ -1,0 +1,88 @@
+{
+	"credit": "Design by CaliberMC - Charm8er",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "caliberblocks:block/building/blocks/stone_battlement_end",
+		"particle": "caliberblocks:block/building/blocks/wf_battlement"
+	},
+	"elements": [
+		{
+			"from": [-2, 0, 0],
+			"to": [16, 9, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 0, 0]},
+			"faces": {
+				"north": {"uv": [4, 0, 6.25, 1.125], "texture": "#1"},
+				"east": {"uv": [4, 2.5, 6, 3.625], "texture": "#1"},
+				"south": {"uv": [4, 1.25, 6.25, 2.375], "texture": "#1"},
+				"west": {"uv": [4, 3.75, 6, 4.875], "texture": "#1"},
+				"up": {"uv": [2.25, 2, 0, 0], "texture": "#1"},
+				"down": {"uv": [2.25, 2.125, 0, 4.125], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-2.5, 8.5, -0.5],
+			"to": [16.5, 10, 16.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 0, 0]},
+			"faces": {
+				"north": {"uv": [2.125, 8, 2.9375, 8.1875], "texture": "#1"},
+				"east": {"uv": [7.375, 1, 9.5, 1.1875], "texture": "#1"},
+				"south": {"uv": [4.875, 8.125, 5.6875, 8.3125], "texture": "#1"},
+				"west": {"uv": [7.375, 1.375, 9.5, 1.5625], "texture": "#1"},
+				"up": {"uv": [2.9375, 7.875, 2.125, 5.75], "texture": "#1"},
+				"down": {"uv": [7.1875, 0, 6.375, 2.125], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-8, 0, -0.5],
+			"to": [-2, 1.5, 16.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 0, 0]},
+			"faces": {
+				"north": {"uv": [6.125, 4.5, 6.875, 4.6875], "texture": "#1"},
+				"east": {"uv": [7.375, 1.75, 9.5, 1.9375], "texture": "#1"},
+				"south": {"uv": [5.875, 8.125, 6.625, 8.3125], "texture": "#1"},
+				"west": {"uv": [7.375, 2.125, 9.5, 2.3125], "texture": "#1"},
+				"up": {"uv": [3.875, 8.625, 3.125, 6.5], "texture": "#1"},
+				"down": {"uv": [4.75, 6.5, 4, 8.625], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.45, 0.45, 0.45]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

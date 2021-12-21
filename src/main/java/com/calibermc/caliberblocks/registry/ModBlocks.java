@@ -64,7 +64,7 @@ public class ModBlocks {
     public static final RegistryObject <Block> STONE_SM_STAIRS_CRACKED = registerBlock("building/stairs/stone_small_stairs_cracked", () -> new ModStairBlock(ModBlocks.STONE_SM_CRACKED.get().defaultBlockState()));
     public static final RegistryObject <Block> STONE_SM_STAIRS_DIRTY = registerBlock("building/stairs/stone_sm_stairs_dirty", () -> new ModStairBlock(ModBlocks.STONE_SM_DIRTY.get().defaultBlockState()));
     public static final RegistryObject <Block> STONE_SM_STAIRS_MUDDY = registerBlock("building/stairs/stone_sm_stairs_muddy", () -> new ModStairBlock(ModBlocks.STONE_SM_MUDDY.get().defaultBlockState()));
-    //public static final RegistryObject <Block> COBBLESTONE_STAIRS_DARK = registerBlock("building/stairs/cobblestone_stairs_dark", () -> new ModStairBlock(ModBlocks.COBBLESTONE_STAIRS_DARK.get().defaultBlockState()));
+    public static final RegistryObject <Block> COBBLESTONE_STAIRS_DARK = registerBlock("building/stairs/cobblestone_stairs_dark", () -> new ModStairBlock(ModBlocks.COBBLESTONE_DARK.get().defaultBlockState()));
 
     // -- Walls
     public static final RegistryObject <Block> STONE_SM_WALL = registerBlock("building/walls/stone_sm_wall", ModWallBlock::new);
@@ -73,6 +73,14 @@ public class ModBlocks {
     public static final RegistryObject <Block> STONE_SM_WALL_DIRTY = registerBlock("building/walls/stone_sm_wall_dirty", ModWallBlock::new);
     public static final RegistryObject <Block> STONE_SM_WALL_MUDDY = registerBlock("building/walls/stone_sm_wall_muddy", ModWallBlock::new);
     public static final RegistryObject <Block> COBBLESTONE_WALL_DARK = registerBlock("building/walls/cobblestone_wall_dark", ModWallBlock::new);
+    
+    // -- Battlements
+    public static final RegistryObject <Block> STONE_BATTLEMENT = registerBlock("building/blocks/stone_battlement", StoneBattlement::new);
+    public static final RegistryObject <Block> STONE_BATTLEMENT_CORNER = registerBlock("building/blocks/stone_battlement_corner", StoneBattlementCorner::new);
+    public static final RegistryObject <Block> STONE_BATTLEMENT_END = registerBlock("building/blocks/stone_battlement_end", StoneBattlementEnd::new);
+    public static final RegistryObject <Block> STONE_BATTLEMENT_SHORT = registerBlock("building/blocks/stone_battlement_short", StoneBattlementShort::new);
+    public static final RegistryObject <Block> STONE_BATTLEMENT_SHORT_CORNER = registerBlock("building/blocks/stone_battlement_short_corner", StoneBattlementShortCorner::new);
+    public static final RegistryObject <Block> STONE_BATTLEMENT_SHORT_END = registerBlock("building/blocks/stone_battlement_short_end", StoneBattlementShortEnd::new);
 
     // -- Doors
     public static final RegistryObject <Block> OAK_DOOR_LG = registerBlock("building/blocks/oak_door_lg", ModDoorBlock::new);
@@ -121,6 +129,8 @@ public class ModBlocks {
     public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_WEATHERED = registerBlock("building/stairs/rk_sandstone_stairs_weathered", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_WEATHERED.get().defaultBlockState()));
     public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_DIRTY = registerBlock("building/stairs/rk_sandstone_stairs_dirty", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_DIRTY.get().defaultBlockState()));
     public static final RegistryObject <Block> RK_SANDSTONE_STAIRS_MUDDY = registerBlock("building/stairs/rk_sandstone_stairs_muddy", () -> new ModStairBlock(ModBlocks.RK_SANDSTONE_MUDDY.get().defaultBlockState()));
+    public static final RegistryObject <Block> KL_COBBLESTONE_STAIRS = registerBlock("building/stairs/kl_cobblestone_stairs", () -> new ModStairBlock(ModBlocks.KL_COBBLESTONE.get().defaultBlockState()));
+    public static final RegistryObject <Block> KL_COBBLESTONE_STAIRS_DARK = registerBlock("building/stairs/kl_cobblestone_stairs_dark", () -> new ModStairBlock(ModBlocks.KL_COBBLESTONE_DARK.get().defaultBlockState()));
     // ---- Walls
     public static final RegistryObject <Block> RK_SANDSTONE_WALL = registerBlock("building/walls/rk_sandstone_wall", ModWallBlock::new);
     public static final RegistryObject <Block> RK_SANDSTONE_WALL_SMOOTH = registerBlock("building/walls/rk_sandstone_wall_smooth", ModWallBlock::new);
@@ -138,7 +148,6 @@ public class ModBlocks {
 
     // - The North
     // -- Winterfell
-
 
 
     // Structures

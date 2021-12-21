@@ -47,6 +47,8 @@
   "block.caliberblocks.building.stairs.rk_sandstone_stairs_weathered": "RK Sandstone Stairs Weathered",
   "block.caliberblocks.building.stairs.rk_sandstone_stairs_dirty": "RK Sandstone Stairs Dirty",
   "block.caliberblocks.building.stairs.rk_sandstone_stairs_muddy": "RK Sandstone Stairs Muddy",
+  "block.caliberblocks.building.stairs.kl_cobblestone_stairs": "KL Cobblestone Stairs",
+  "block.caliberblocks.building.stairs.kl_cobblestone_stairs_dark": "KL Cobblestone Stairs Dark",
 
   "block.caliberblocks.building.walls.rk_sandstone_wall": "RK Sandstone Wall",
   "block.caliberblocks.building.walls.rk_sandstone_wall_smooth": "RK Sandstone Wall Smooth",
@@ -56,6 +58,13 @@
   "block.caliberblocks.building.walls.rk_sandstone_wall_weathered": "RK Sandstone Wall Weathered",
   "block.caliberblocks.building.walls.rk_sandstone_wall_dirty": "RK Sandstone Wall Dirty",
   "block.caliberblocks.building.walls.rk_sandstone_wall_muddy": "RK Sandstone Wall Muddy",
+
+  "block.caliberblocks.building.blocks.stone_battlement": "Stone Battlement",
+  "block.caliberblocks.building.blocks.stone_battlement_corner": "Stone Battlement Corner",
+  "block.caliberblocks.building.blocks.stone_battlement_end": "Stone Battlement End",
+  "block.caliberblocks.building.blocks.stone_battlement_short": "Stone Battlement Short",
+  "block.caliberblocks.building.blocks.stone_battlement_short_corner": "Stone Battlement Short Corner",
+  "block.caliberblocks.building.blocks.stone_battlement_short_end": "Stone Battlement Short End",
 
   "block.caliberblocks.building.blocks.stone_sm": "Small Stone",
   "block.caliberblocks.building.blocks.stone_sm_mossy": "Small Stone Mossy",
@@ -76,6 +85,7 @@
   "block.caliberblocks.building.slabs.stone_sm_slab_cracked": "Small Stone Slab Cracked",
   "block.caliberblocks.building.slabs.stone_sm_slab_dirty": "Small Stone Slab Dirty",
   "block.caliberblocks.building.slabs.stone_sm_slab_muddy": "Small Stone Slab Muddy",
+  "block.caliberblocks.building.blocks.cobblestone_slab_dark": "Cobblestone Slab Dark",
 
   "block.caliberblocks.building.stairs.stone_sm_stairs": "Small Stone Stairs",
   "block.caliberblocks.building.stairs.stone_sm_stairs_mossy": "Small Stone Stairs Mossy",
@@ -83,6 +93,7 @@
   "block.caliberblocks.building.stairs.stone_sm_stairs_cracked": "Small Stone Stairs Cracked",
   "block.caliberblocks.building.stairs.stone_sm_stairs_dirty": "Small Stone Stairs Dirty",
   "block.caliberblocks.building.stairs.stone_sm_stairs_muddy": "Small Stone Stairs Muddy",
+  "block.caliberblocks.building.blocks.cobblestone_stairs_dark": "Cobblestone Stairs Dark",
 
   "block.caliberblocks.building.walls.stone_sm_wall": "Small Stone Wall",
   "block.caliberblocks.building.walls.stone_sm_wall_mossy": "Small Stone Wall Mossy",
@@ -90,6 +101,7 @@
   "block.caliberblocks.building.walls.stone_sm_wall_cracked": "Small Stone Wall Cracked",
   "block.caliberblocks.building.walls.stone_sm_wall_dirty": "Small Stone Wall Dirty",
   "block.caliberblocks.building.walls.stone_sm_wall_muddy": "Small Stone Wall Muddy",
+  "block.caliberblocks.building.blocks.cobblestone_wall_dark": "Cobblestone Wall Dark",
 
   "block.caliberblocks.structures.pillar_base_md": "Medium Pillar Base",
   "block.caliberblocks.structures.pillar_center_md": "Medium Pillar Center",
